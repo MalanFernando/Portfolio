@@ -272,7 +272,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 14px;
 }
 
-/* HABILIDADES */
+/* tecnologias */
 .flex-card{
     display: flex;
     flex-direction: column;
@@ -287,7 +287,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.hab-img{
+.tec-img{
     max-width: 350px;
     padding: .5rem;
 }
@@ -303,39 +303,39 @@ body::-webkit-scrollbar-thumb {
     gap: 10px;
 }
 
-.habilidades li{
+.tecnologias li{
     display: flex;
     padding: .5rem .8rem;
     border-radius: 4px;
     box-shadow: var(--sombra);
 }
 
-.habilidades .hab-html{
+.tecnologias .tec-html{
     background-color: var(--orange);
 }
-.habilidades .hab-css{
+.tecnologias .tec-css{
     background-color: var(--skyBlue);
 }
-.habilidades .hab-git{
+.tecnologias .tec-git{
     background-color: var(--crimsonLight);
 }
-.habilidades .hab-js{
+.tecnologias .tec-js{
     background-color: var(--yellowLight);
 }
-.habilidades .hab-fig{
+.tecnologias .tec-fig{
     background-color: var(--lime);
 }
-.habilidades .hab-illus{
+.tecnologias .tec-illus{
     background-color: var(--wine);
 }
-.habilidades .hab-react{
+.tecnologias .tec-react{
     background-color: var(--blueReact);
 }
-.habilidades .hab-node{
+.tecnologias .tec-node{
     background-color: var(--greenNode);
 }
 
-.habilidades li i{
+.tecnologias li i{
     font-size: 1.5rem;
     margin-right: 10px;
 }
