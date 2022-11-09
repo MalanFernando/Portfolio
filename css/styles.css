@@ -8,17 +8,18 @@
     --blueGreenSpan: #406770;
     --menuBlueGreen: #162e37c4;
     --pastelGreen: #D4ECDD;
-    --orange: #c29e84;
-    --crimsonLight: #C28F84;
-    --skyBlue: #7ca8b6;
-    --yellowLight: #c5b16a;
-    --blueReact: #58a6b9;
-    --greenNode: #66916d;
-    --lime: #89ac9d;
+    --orange: #c07a68;
+    --crimsonLight: #a5756a;
+    --skyBlue: #5e8ea8;
+    --yellowLight: #c4ad62;
+    --blueReact: #4e9aad;
+    --greenNode: #618f69;
+    --blueDb: #5a81b4;
+    --lime: -webkit-linear-gradient(215deg, #eb5e33 0%, #ff7768 17%, #a665fa 39%, #32c5ff 60%, #1dc484 80%);
     --yellowBrown: #BBA761;
-    --pinky: #af7486;
-    --lemon: #749c86;
-    --wine: #a1888a;
+    --pinky: #9c6173;
+    --blueAlura: #5174a8;
+    --wine: #856a5f;
     --sombra: -2px 10px 25px -15px #0a1316;
     --sombraBtn: -2px 10px 25px -9px #081114;
     --sombraCards: -2px 10px 25px -9px #081114;
@@ -260,7 +261,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 2px;
     box-shadow: var(--sombra);
 }
-.card-acerca *{
+.card-acerca>h2, .card-acerca>p{
     outline: 1px solid var(--white);
 }
 
@@ -271,8 +272,14 @@ body::-webkit-scrollbar-thumb {
     line-height: 1.5rem;
     font-size: 14px;
 }
+.icon-ec{
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0 0 -5px 0;
+    padding: 0;
+}
 
-/* tecnologias */
+/* HABILIDADES */
 .flex-card{
     display: flex;
     flex-direction: column;
@@ -287,7 +294,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.tec-img{
+.hab-img{
     max-width: 350px;
     padding: .5rem;
 }
@@ -303,39 +310,42 @@ body::-webkit-scrollbar-thumb {
     gap: 10px;
 }
 
-.tecnologias li{
+.habilidades li{
     display: flex;
     padding: .5rem .8rem;
     border-radius: 4px;
     box-shadow: var(--sombra);
 }
 
-.tecnologias .tec-html{
+.habilidades .hab-html{
     background-color: var(--orange);
 }
-.tecnologias .tec-css{
+.habilidades .hab-css{
     background-color: var(--skyBlue);
 }
-.tecnologias .tec-git{
+.habilidades .hab-git{
     background-color: var(--crimsonLight);
 }
-.tecnologias .tec-js{
+.habilidades .hab-js{
     background-color: var(--yellowLight);
 }
 .habilidades .hab-fig{
-    background-color: var(--lime);
+    background-image: var(--lime);
 }
-.tecnologias .tec-illus{
+.habilidades .hab-illus{
     background-color: var(--wine);
 }
-.tecnologias .tec-react{
+.habilidades .hab-react{
     background-color: var(--blueReact);
 }
-.tecnologias .tec-node{
+.habilidades .hab-node{
     background-color: var(--greenNode);
 }
+.habilidades .hab-db{
+    background-color: var(--blueDb);
+}
 
-.tecnologias li i{
+.habilidades li i{
     font-size: 1.5rem;
     margin-right: 10px;
 }
@@ -410,11 +420,11 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--yellowBrown);
 }
 .formacion .second{
-    background-color: var(--pinky);
+    background-color: var(--blueAlura);
     top: 48%;
 }
 .formacion .third{
-    background-color: var(--lemon);
+    background-color: var(--pinky);
     top: 80%;
 }
 
