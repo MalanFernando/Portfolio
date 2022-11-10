@@ -261,9 +261,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 2px;
     box-shadow: var(--sombra);
 }
-.card-acerca>h2, .card-acerca>p{
-    outline: 1px solid var(--white);
-}
 
 .parr-sections{
     text-align: left;
@@ -273,10 +270,9 @@ body::-webkit-scrollbar-thumb {
     font-size: 14px;
 }
 .icon-ec{
-    width: 1.4rem;
-    height: 1.4rem;
-    margin: 0 0 -5px 0;
-    padding: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0 5px -5px 0;
 }
 
 /* HABILIDADES */
