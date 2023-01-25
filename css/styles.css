@@ -1,17 +1,14 @@
 @font-face {
     font-family: "Recoleta-SemiBold";
-    src: url(/fonts/Recoleta-SemiBold.woff2) format("woff2");
-    font-display: swap;
+    src: url("/fonts/Recoleta-SemiBold.woff2") format("woff2");
 }
 @font-face {
     font-family: "Inter-Black";
-    src: url(/fonts/Inter-Black.woff2) format("woff2");
-    font-display: swap;
+    src: url("/fonts/Inter-Black.woff2") format("woff2");
 }
 @font-face {
     font-family: "Inter-Medium";
-    src: url(/fonts/Inter-Medium.woff2) format("woff2");
-    font-display: swap;
+    src: url("/fonts/Inter-Medium.woff2") format("woff2");
 }
 
 :root{
@@ -45,9 +42,9 @@
 
     --blueAlura: #5B99D2;
     --orangeKeepCod: #D6875C;
-    --sombra: -2px 10px 25px -15px #0a1316;
-    --sombraBtn: -2px 10px 25px -9px #081114;
-    --sombraCards: -2px 10px 25px -9px #081114;
+    --sombra: -2px 10px 25px -15px #0c0a16;
+    --sombraBtn: -2px 10px 25px -9px #0b0814;
+    --sombraCards: -2px 10px 25px -9px #0a0814;
 }
 
 html{
