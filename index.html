@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dabit</title>
     <script src="https://kit.fontawesome.com/0563dd7483.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="assets/img/fav.ico" type="image/ico">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
 </head>
@@ -18,13 +15,12 @@
     <header id="home">
         <div class="menu ">
             <div class="menu-position section-styles">
-                <a href="#home"><p class="logo">Da<span class="color-span">bit</span></p></a>
-                <button class="toggle-btn">
+                <a href="#home"><p class="logo">Da<span class="color-span"><span class="span-b">b</span><span class="span-i">i</span><span class="span-t">t</span></span></p></a>
+                <button class="menu-button">
                     <i class="hamb-btn fa-solid fa-bars"></i>
                     <i class="cls-btn close-btn fa-solid fa-xmark"></i>
                 </button>
-                <nav class="menu-nav"> 
-                    <a href="#home">Inicio</a>
+                <nav class="menu-nav">
                     <a href="#about">Acerca de mí</a>
                     <a href="#habilities">Habilidades</a>
                     <a href="#formation">Formación</a>
@@ -34,197 +30,221 @@
             </div>
         </div>
         <div class="portada section-styles">
-            <p class="presentacion section-styles">
-                Soy <span class="color-span">Fernando Malán.</span> Desarrollador web Frontend
-            </p>
+            <h1 class="presentation">
+                Soy <span class="color-name">Fernando Malán<span class="color-span">.</span></span> Desarrollador Frontend
+            </h1>
             <div class="btns-presentacion">
-                <a class="btn btn-proyectos btn-skyblue" href="#portfolio">Ver proyectos
+                <a class="btn btn-proj" href="#projects">Ver proyectos
                     <i class="fa-solid fa-folder-open"></i>
                 </a>
-                <a class="btn btn-cv" href="assets/CV/CV_2022.pdf" target="_blank"><i class="fa-solid fa-arrow-down"></i> Descargar CV</a>
+                <a class="btn btn-cv" href="assets/CV/CV_2022.pdf" target="_blank">
+                    <i class="fa-solid fa-arrow-down"></i> Curriculum
+                </a>
+            </div>
+            <div class="portada-image">
+                <img src="assets/illustrations/portada-image.svg" alt="office-illustration">
             </div>
         </div>
     </header>
     <main class="main-section">
-        <section id="about" class="acerca-de flex-content">
-            <div class="content-perfil" data-aos="fade-down"
+        <section id="about" class="about-me flex-content section-styles">
+            <div class="content-profile" data-aos="fade-down"
             data-aos-duration="1000">
-                <a href="https://github.com/MalanFernando" target="_blank"><i class="git fa-brands fa-github"></i></a>
+            <div class="profile-photo">
                 <a href="https://www.linkedin.com/in/fernando-david-malan-perugachi-b48b6321a/" target="_blank"><i class="linke fa-brands fa-linkedin"></i></a>
-                <a href="https://twitter.com/fernandomalan96" target="_blank"><i class="twitt fa-brands fa-twitter"></i></a>
-                <div class="circle-perfil"></div>
-                <a href="mailto:fernando-perugachi@hotmail.com" target="_blank" aria-label="Email" class="btn-contacto"><i class="fa-regular fa-envelope"></i>Contáctame</a>
+                <a href="https://github.com/MalanFernando" target="_blank"><i class="git fa-brands fa-github"></i></a>
+                <a href="mailto:fernando-perugachi@hotmail.com" target="_blank" aria-label="Email" class="btn-contact"><i class="fa-regular fa-paper-plane"></i></i>Contáctame</a>
+                <h3 class="profile-salute">Hi!</h3>
+                <div class="profile-info">
+                    <h4 class="info-nickname">Dabit <span><img class="icon-ec" src="assets/img/icon-ec.png" alt="flag-ecuadorian"></span></h4>
+                    <p class="info-level">Jr. Developer</p>
+                    <p class="info-hashtag">#OpenToWork</p>
+                </div>
             </div>
-            <div class="card-acerca" data-aos="fade-up" data-aos-duration="1200">
-                <h2 class="subtit-section">Acerca de mí</h2>
-                <p class="parr-sections">
-                    Hola! Soy de Ecuador <img class="icon-ec" src="assets/img/icon-ec.png" alt="EC"> tengo 26 años, autodidacta por naturaleza (siempre estoy buscando aprender algo nuevo), el diseño y la creatividad son mi punto fuerte y disfruto desarrollar soluciones para la web. Si me das la oportunidad me gustaria demostrar mis habilidades tanto blandas como técnicas y aportar un valor significativo a la empresa.
-                </p>
+            </div>
+            <div class="card-about" data-aos="fade-up" data-aos-duration="1200">
+                <h2 class="subtit-section">Acerca de <span class="yellow about-span">mí</span></h2>
+                <div class="about-window">
+                    <div class="window-bar">
+                        <div class="bar-buttons">
+                            <span class="b-btn  red"></span>
+                            <span class="b-btn  yellow"></span>
+                            <span class="b-btn green"></span>
+                        </div>
+                        <div class="bar-title">about.txt</div>
+                    </div>
+                    <div class="window-content">
+                        <div class="content-sidebar">1</div>
+                        <div class="content-text">
+                            <p class="content-parraf"> 
+                                Hola! Soy de Ecuador tengo 26 años, y me gusta el desarrollo frontend, constantemente estoy buscando aprender algo nuevo, el diseño y la creatividad son mi punto fuerte y disfruto desarrollar soluciones para la web.  Busco explotar mis habilidades tanto blandas como técnicas y deseo aportar un valor significativo a las empresas.
+                            </p>
+                            <svg class="content-cursor" width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40.6735 23.9252C41.4739 24.2964 41.4364 25.4467 40.6135 25.765L33.1863 28.6381C32.5407 28.8878 32.338 29.7022 32.7913 30.2255L38.7501 37.1041C39.1234 37.535 39.0614 38.1904 38.6138 38.5437L34.7516 41.5927C34.3314 41.9244 33.7243 41.8663 33.3747 41.4608L27.1848 34.2818C26.7631 33.7927 25.9953 33.8256 25.617 34.349L21.2652 40.3702C20.7586 41.0713 19.6611 40.8419 19.4775 39.9966L13.6512 13.1597C13.4759 12.3523 14.2997 11.6927 15.0492 12.0403L40.6735 23.9252ZM11.1917 6.79351C11.5367 7.2244 11.4674 7.85339 11.0367 8.19873L10.7805 8.40421C10.3495 8.74982 9.71989 8.68047 9.37446 8.24935L6.31331 4.42876C5.96799 3.99776 6.03743 3.36843 6.46842 3.02309L6.72573 2.81692C7.15681 2.4715 7.7863 2.54105 8.13159 2.97223L11.1917 6.79351ZM22.1636 1.52038C22.2235 0.906646 21.719 0.385523 21.1037 0.425407L20.801 0.445026C20.3119 0.476723 19.9179 0.858132 19.8704 1.34587L19.2777 7.42287C19.2179 8.0366 19.7223 8.55772 20.3377 8.51784L20.6404 8.49822C21.1294 8.46652 21.5234 8.08511 21.571 7.59738L22.1636 1.52038ZM6.14488 17.807C6.65656 17.9159 7.16566 17.6119 7.31264 17.1099L7.40366 16.799C7.56716 16.2405 7.22116 15.661 6.65199 15.5399L1.56172 14.4572C1.05004 14.3484 0.540945 14.6523 0.39396 15.1543L0.30294 15.4652C0.139442 16.0237 0.485442 16.6033 1.05461 16.7243L6.14488 17.807Z" fill="#EBEBEE"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="habilities" class="habilidades section-styles">
-            <h2 class="subtit-section">Habilidades Técnicas</h2>
-            <img class="hab-img" data-aos="fade-up"
-            data-aos-duration="1200" src="assets/img/work.svg" alt="">
-            <div class="flex-card flex-content">
-                <p class="parr-sections">
-                    Llevo alrededor de 2 años y medio de estudio sobre diseño, maquetación y desarrollo web en general de manera autodidacta. Anteriormente estudié Ing. Informática llegando hasta cuarto semestre, no pude continuar por factores externos. Actualmente terminé un bootcamp como fullstack y tengo conocimiento básico e intermedio de las siguientes tecnologías.                  
-                </p>
+        <section id="habilities" class="hab-section">
+            <div class="section-card">
+                <div class="card-info">
+                    <h2 class="subtit-section">Habilidades Técnicas</h2>
+                    <span class="sub-quotes">“</span>
+                    <p class="info-parr">
+                        Llevo alrededor de <span class="span-year">2 años</span> y medio de estudio sobre diseño, maquetación y <span class="span-develop">desarrollo web</span> en general de manera autodidacta y en plataformas online. Actualmente me certifique como desarrollador <span class="span-stack">PERN stack</span> y tengo conocimiento básico e intermedio de las siguientes tecnologías y herramientas.
+                    </p>
+                    <img class="skill-img" src="assets/illustrations/skills.svg" alt="ofice-designer-illustration">
+                </div>
                 <div class="flex-list">
                     <ul class="flex-content">
-                        <li class="hab-html" data-aos="fade-up" data-aos-duration="800"><i class="fa-brands fa-html5"></i><h3>Html</h3></li>
-                        <li class="hab-css" data-aos="fade-up" data-aos-duration="1000"><i class="fa-brands fa-css3-alt"></i><h3>Css</h3></li>
-                        <li class="hab-js" data-aos="fade-up" data-aos-duration="1400"><i class="fa-brands fa-js-square"></i><h3>JavaScript</h3></li>
-                        <li class="hab-git" data-aos="fade-up" data-aos-duration="1200"><i class="fa-brands fa-git-alt"></i><h3>Git</h3></li>
-                        <li class="hab-fig" data-aos="fade-up" data-aos-duration="1600"><i class="fa-brands fa-figma"></i><h3>Figma</h3></li>
-                        <li class="hab-illus" data-aos="fade-up" data-aos-duration="1800"><i class="fa-solid fa-bezier-curve"></i><h3>Illustrator</h3></li>
-                        <li class="hab-react" data-aos="fade-up" data-aos-duration="1800"><i class="fa-brands fa-react"></i><h3>React</h3></li>
-                        <li class="hab-node" data-aos="fade-up" data-aos-duration="1800"><i class="fa-brands fa-node-js"></i><h3>Node Js</h3></li>
-                        <li class="hab-db" data-aos="fade-up" data-aos-duration="1800"><i class="fa-solid fa-database"></i><h3>PostgreSQL</h3></li>
+                        <li class="hab-js" data-aos="fade-right" data-aos-duration="1200"><i class="icon-tech fa-brands fa-js-square"></i><h4>JavaScript</h4></li>
+                        <span class="arrow a-first" data-aos="fade-right" data-aos-duration="1000"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                        <li class="hab-html" data-aos="fade-left" data-aos-duration="1300"><i class="icon-tech fa-brands fa-html5"></i><h4>Html</h4></li>
+                        <li class="a-second" data-aos="fade-right" data-aos-duration="1600"><i class="arrow fa-solid fa-arrow-right-long"></i></li>
+                        <li class="hab-git" data-aos="fade-right" data-aos-duration="1200"><i class="icon-tech fa-brands fa-git-alt"></i><h4>Git</h4></li>
+                        <li class="hab-css" data-aos="fade-left" data-aos-duration="1200"><i class="icon-tech fa-brands fa-css3-alt"></i><h4>Css</h4></li>
+                        <span class="arrow a-third" data-aos="fade-left" data-aos-duration="1200"><i class="fa-solid fa-circle-arrow-left"></i></span>
+                        <li class="hab-react" data-aos="fade-left" data-aos-duration="1000"><i class="icon-tech fa-brands fa-react"></i><h4>React</h4></li>
+                        <span class="hearth" data-aos="zoom-in" data-aos-duration="1100"><i class="fa-solid fa-heart"></i></span>
+                        <li class="hab-node" data-aos="fade-left" data-aos-duration="800"><i class="icon-tech fa-brands fa-node-js"></i><h4>Node Js</h4></li>
+                        <li class="hab-net" data-aos="fade-right" data-aos-duration="1000"><img src="assets/icons/dotNet.svg" alt=".net-logo"><h4>.Net</h4></li>
+                        <li class="hab-db" data-aos="fade-right" data-aos-duration="900"><img src="assets/icons/postgreSql.svg" alt="postgresql-logo"><h4>PostgreSql</h4></li>
+                        <span class="arrow a-fourth" data-aos="fade-down" data-aos-duration="800"><i class="fa-solid fa-circle-arrow-down"></i></span>
+                        <li class="hab-fig" data-aos="fade-right" data-aos-duration="1000"><i class="icon-tech fa-brands fa-figma"></i><h4>Figma</h4></li>
+                        <span class="arrow a-fifth" data-aos="fade-left" data-aos-duration="600"><i class="fa-solid fa-circle-arrow-down"></i></span>
+                        <li class="hab-illus" data-aos="fade-left" data-aos-duration="1200"><i class="icon-tech fa-solid fa-bezier-curve"></i><h4>Illustrator</h4></li>
+                        <li class="hab-ph" data-aos="fade-right" data-aos-duration="1800"><i class="icon-tech fa-solid fa-pen-nib"></i><h4>Photoshop</h4></li>
+                        <span class="arrow smile" data-aos="zoom-in" data-aos-duration="1000"><i class="fa-solid fa-face-laugh-beam"></i></span>    
                     </ul>
                 </div>
             </div>
         </section>
-        <section id="formation" class="formacion color-section section-styles">
-            <h2 class="subtit-section">Formación</h2>
-                <div class="forma-card flex-content">
-                    <div class="forma-list">
-                        <ul>
-                            <li>
-                                <h3 class="tit-forma" data-aos="fade-left">KeepCoding</h3>
-                                <div class="circle first" data-aos="fade-down" data-aos-duration="1000"></div>
-                                <p class="text-forma" data-aos="fade-left">
-                                    <i class="fa-solid fa-graduation-cap"></i>2019 - 2020
-                                </p>
-                            </li>
-                            <li>
-                                <h3 class="tit-forma" data-aos="fade-left">Alura Latam</h3>
-                                <div class="circle second" data-aos="fade-down" data-aos-duration="800"></div>
-                                <p class="text-forma" data-aos="fade-left">
-                                    <i class="fa-solid fa-graduation-cap"></i>2021 - 2021
-                                </p>
-                            </li>
-                            <li>
-                                <h3 class="tit-forma" data-aos="fade-left">Academlo</h3>
-                                <div class="circle third" data-aos="fade-down" data-aos-duration="600"></div>
-                                <p class="text-forma" data-aos="fade-left">
-                                    <i class="fa-solid fa-graduation-cap"></i>2022 - 2022
-                                </p>
-                            </li>
-                        </ul>
+        <section id="formation" class="formation section-styles">
+            <img class="forma-img-graduate" src="assets/illustrations/graduate.svg" alt="graduate-illustration">
+            <div class="forma-title">
+                <span class="title-bg for"><h2 class="bg-letter">FOR</h2></span>
+                <span class="title-bg ma"><h2 class="bg-letter">MA</h2></span>
+                <span class="title-bg tion"><h2 class="bg-letter">CIÓN</h2></span>
+            </div>
+            <div class="forma-card">
+                <ul class="card-list">
+                    <li class="list-line">
+                        <h3 class="tit-forma" data-aos="fade-left">Academlo</h3>
+                        <p class="text-forma" data-aos="fade-left">
+                        Full-Stack <span class="span-year">2022</span> - 2022
+                        </p>
+                    </li>
+                    <li class="list-line">
+                        <h3 class="tit-forma" data-aos="fade-left">Alura Latam</h3>
+                        <p class="text-forma" data-aos="fade-left">
+                        <span class="span-front">Frontend</span> Developer 2021 - 2021
+                        </p>
+                    </li>
+                    <li class="list-line">
+                        <h3 class="tit-forma" data-aos="fade-left">KeepCoding</h3>
+                        <p class="text-forma" data-aos="fade-left">
+                        Web <span class="span-keepCod">developer</span> 2019 - 2020
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="tit-forma" data-aos="fade-left">UTPL</h3>
+                        <p class="text-forma" data-aos="fade-left">
+                        <span class="yellow">Ing.</span> Informático 2017 - 2019
+                        </p>
+                    </li>
+                </ul>
+                <div class="forma-imgs" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="imgs-group">
+                        <img src="assets/logos/academlo.png" alt="academlo-logo">
+                        <img src="assets/logos/alura.png" alt="AluraLatam-logo">
                     </div>
-                    <div class="forma-img" data-aos="fade-right" data-aos-duration="1200">
-                        <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315.73 256.98"><defs><style>.cls-1{fill:#406770;}.cls-2{fill:#84bacb;}.cls-3{fill:#231f20;}.cls-4{fill:none;}.cls-5{fill:#e2c9b3;}.cls-6{fill:#203b42;}.cls-7{fill:#132226;}.cls-8{fill:#bba761;}.cls-9{fill:#0d191c;}.cls-10,.cls-11{fill:#b26666;}.cls-11{stroke:#b26666;stroke-miterlimit:10;}.cls-12{fill:#6fa688;}</style></defs><title>Coworking</title><path class="cls-1" d="M307.3,235.66c-30.47-10.27-28.38,4.12-181.55-12s-132.25,11.3-111,16.28,47.76-1,156.92,12.42C284.1,266.09,337.77,245.93,307.3,235.66Z" transform="translate(0 0)"/><polygon class="cls-2" points="155.06 124.8 114.05 124.8 113.13 121.27 105.06 90.61 146.06 90.61 154.13 121.27 155.06 124.8"/><path class="cls-3" d="M155,125.31H114a.51.51,0,0,1-.48-.38l-9-34.19a.51.51,0,0,1,.36-.62h41.14a.47.47,0,0,1,.48.37l9,34.2a.5.5,0,0,1-.08.43A.57.57,0,0,1,155,125.31Zm-40.6-1h40l-8.73-33.17h-40Z" transform="translate(0 0)"/><polygon class="cls-3" points="155.06 124.8 114.05 124.8 113.13 121.27 154.13 121.27 155.06 124.8"/><path class="cls-3" d="M155,125.31H114a.51.51,0,0,1-.48-.38l-.93-3.53a.5.5,0,0,1,.35-.61h41.14a.47.47,0,0,1,.48.37l.93,3.54a.5.5,0,0,1-.08.43A.58.58,0,0,1,155,125.31Zm-40.6-1h40l-.66-2.51h-40Z" transform="translate(0 0)"/><rect class="cls-3" x="87.25" y="131.03" width="3.69" height="117.08"/><path class="cls-3" d="M91,248.62H87.26a.53.53,0,0,1-.51-.51V131a.51.51,0,0,1,.51-.51H91a.51.51,0,0,1,.51.51V248a.51.51,0,0,1-.46.55Zm-3.18-1h2.68V131.54H87.77Z" transform="translate(0 0)"/><rect class="cls-3" x="226.47" y="131.03" width="3.69" height="117.08"/><path class="cls-3" d="M230.13,248.62h-3.69a.53.53,0,0,1-.51-.51V131a.51.51,0,0,1,.51-.51h3.69a.51.51,0,0,1,.51.51h0V248a.52.52,0,0,1-.47.55Zm-3.19-1h2.68V131.54h-2.68Z" transform="translate(0 0)"/><rect class="cls-3" x="88.12" y="220.42" width="138.58" height="3.69"/><path class="cls-3" d="M226.7,224.62H88.13a.5.5,0,0,1-.51-.49h0v-3.7a.53.53,0,0,1,.51-.51H226.7a.51.51,0,0,1,.51.51h0v3.7a.5.5,0,0,1-.5.5Zm-138-1H226.19V220.9H88.63Z" transform="translate(0 0)"/><rect class="cls-4" x="78.01" y="124.8" width="161.41" height="6.22" rx="3.03"/><path class="cls-3" d="M236.34,131.54H81.13A3.57,3.57,0,0,1,77.58,128v-.17a3.57,3.57,0,0,1,3.55-3.54H236.34a3.52,3.52,0,0,1,3.54,3.52v0h0V128a3.53,3.53,0,0,1-3.52,3.54ZM81.13,125.31a2.54,2.54,0,0,0-2.53,2.52V128a2.54,2.54,0,0,0,2.53,2.52H236.34a2.54,2.54,0,0,0,2.53-2.52v-.17a2.54,2.54,0,0,0-2.53-2.52Z" transform="translate(0 0)"/><path class="cls-5" d="M212.26,102.62s8.48,19.28,5.34,21.28-22.33,0-22.33,0L196.94,99" transform="translate(0 0)"/><path class="cls-3" d="M210.27,125.32c-6.16,0-13.78-.79-15-.92a.51.51,0,0,1-.45-.54L196.48,99a.5.5,0,0,1,.53-.47h0a.5.5,0,0,1,.47.53h0l-1.63,24.43c5.63.57,19.15,1.56,21.52,0,1.91-1.24-2.09-12.82-5.54-20.65a.51.51,0,1,1,.82-.61l.06.11a.17.17,0,0,1,0,.1c1.45,3.28,8.51,19.75,5.17,21.9C216.73,125.07,213.73,125.32,210.27,125.32Z" transform="translate(0 0)"/><path class="cls-5" d="M144.13,102.62s-8.26,15.23-6.32,19.62,33.32,2.21,33.32,2.21V103.69Z" transform="translate(0 0)"/><path class="cls-3" d="M155.43,125.53c-8.32,0-17-.61-18.07-3-2-4.6,6-19.43,6.34-20.06a.5.5,0,0,1,.47-.27l27,1a.51.51,0,0,1,.48.51v20.76a.5.5,0,0,1-.47.51C169.64,125.06,162.66,125.53,155.43,125.53Zm-11-22.39c-2.34,4.38-7.63,15.52-6.15,18.9,1.29,2.94,20.3,2.76,32.31,1.94V104.17Z" transform="translate(0 0)"/><path class="cls-3" d="M154.46,120.45h-.12a.53.53,0,0,1-.32-.65L159.17,105a.54.54,0,0,1,.74-.19h0a.56.56,0,0,1,.26.53h0l-5.23,14.81A.5.5,0,0,1,154.46,120.45Z" transform="translate(0 0)"/><path class="cls-3" d="M156.58,229.24s-15,8.81-14.11,11.08,28.26,0,28.26,0V227.77Z" transform="translate(0 0)"/><path class="cls-3" d="M151,241.9c-7,0-8.78-.74-9-1.34-1-2.42,9.68-9,14.32-11.71a.48.48,0,0,1,.2-.07l14.11-1.49a.58.58,0,0,1,.4.12.52.52,0,0,1,.17.39v12.6a.49.49,0,0,1-.47.49C161.63,241.57,155.34,241.9,151,241.9Zm5.71-12.12c-7.77,4.56-14.21,9.41-13.81,10.38,1,1.14,14.54.77,27.28-.26V228.24Z" transform="translate(0 0)"/><path class="cls-5" d="M164.63,169.9c-.82.84-8.83,19.57-9.26,22.52s1.21,36.87,1.21,36.87l14.15-1.52s0-32.67,1.38-36.68,12.46-18.41,12.46-18.41Z" transform="translate(0 0)"/><path class="cls-3" d="M156.58,229.8a.53.53,0,0,1-.32-.12.49.49,0,0,1-.18-.37c-.07-1.39-1.64-34-1.21-37s8.47-21.87,9.41-22.8a.51.51,0,0,1,.42-.14l19.94,2.76a.5.5,0,0,1,.43.56h0a.43.43,0,0,1-.1.24c-.11.14-11,14.38-12.38,18.27s-1.31,36.13-1.31,36.52a.51.51,0,0,1-.46.5l-14.15,1.52Zm8.3-59.35c-1.27,2.16-8.58,19.1-9,22-.38,2.67,1,31.88,1.2,36.22l13.19-1.41c0-4.13.09-32.56,1.42-36.39,1.22-3.59,9.75-14.9,12-17.86Z" transform="translate(0 0)"/><polygon class="cls-3" points="196.93 146.04 182.14 186.47 158.79 172.9 170.43 142.69 196.93 146.04"/><path class="cls-3" d="M182.13,187a.72.72,0,0,1-.25-.07l-23.34-13.57a.5.5,0,0,1-.22-.62L170,142.51a.51.51,0,0,1,.54-.32L197,145.54a.52.52,0,0,1,.44.59h0a.14.14,0,0,1,0,.09l-14.8,40.42a.53.53,0,0,1-.31.31Zm-22.72-14.3,22.45,13,14.37-39.25-25.46-3.19Z" transform="translate(0 0)"/><rect class="cls-6" x="175.55" y="157.26" width="6.59" height="81.67"/><path class="cls-3" d="M182.13,157.24V238.9h-6.59V157.24h6.59m0-1h-6.59a1,1,0,0,0-1,1V238.9a1,1,0,0,0,1,1h6.59a1,1,0,0,0,1-1V157.24A1,1,0,0,0,182.13,156.24Z" transform="translate(0 0)"/><polygon class="cls-7" points="175.55 168.47 182.14 172.77 182.14 161.18 175.55 161.18 175.55 168.47"/><polygon class="cls-7" points="175.55 209.58 182.14 214.32 182.22 203.35 175.55 204.74 175.55 209.58"/><path class="cls-5" d="M146.79,132.57s-15.41-1.13-20.55,2c-7,4.35,24.56,57.77,24.56,57.77l10.33-5.5L148,154l5.35-1.47Z" transform="translate(0 0)"/><path class="cls-3" d="M150.8,192.9a.49.49,0,0,1-.44-.24c-3.26-5.51-31.64-54-24.36-58.45,5.21-3.22,20.21-2.17,20.85-2.11a.52.52,0,0,1,.44.34l6.59,19.94a.46.46,0,0,1-.22.61h-.08l-4.81,1.33,12.89,32.32a.5.5,0,0,1-.23.64l-10.3,5.54A.42.42,0,0,1,150.8,192.9Zm-10.21-60c-4.83,0-11.17.37-14.07,2.15-1.21.74-2.66,5.14,9.81,29.84,6.25,12.36,13.26,24.44,14.65,26.82l9.51-5.08-12.93-32.36a.49.49,0,0,1,0-.41.53.53,0,0,1,.32-.27l4.84-1.33-6.32-19.1c-.81-.07-3.06-.19-5.81-.19Z" transform="translate(0 0)"/><path class="cls-3" d="M205.34,135.24s4.15,9.23-.27,15-57,3.68-57,3.68l-5.32-22.73,19-.17Z" transform="translate(0 0)"/><path class="cls-3" d="M168.34,154.9c-10.58,0-19.5-.34-20.37-.38a.51.51,0,0,1-.48-.39l-5.29-22.76a.49.49,0,0,1,.14-.47.53.53,0,0,1,.4-.19l19-.18,43.64,4.23a.49.49,0,0,1,.41.29c.18.39,4.23,9.57-.33,15.56C202.74,154.13,183.81,154.9,168.34,154.9Zm-20-1.38c14.84.58,52.78,1,56.22-3.51,3.79-5,.95-12.72.33-14.21l-43.24-4.2-18.37.17Z" transform="translate(0 0)"/><path class="cls-3" d="M181.05,57.9a5.92,5.92,0,0,0,1.73-1.54,9.28,9.28,0,0,0,1.35-3,30,30,0,0,0-.53-17c-.76-2.38-1.81-5.69-3.62-7.5a5.59,5.59,0,0,0-3-1.46c-.31,0-3.4.67-3,1a12.05,12.05,0,0,0-10.13-2.57c-3,.63-6.39,2.54-7.93,5.25-.63,1.11-.79,1.93-2,2.6a7.28,7.28,0,0,1-5.2.63c-.42-.1-3.16-.58-3.2-.94A9.07,9.07,0,0,0,152,40.8a12.77,12.77,0,0,1-5.57,0,9.69,9.69,0,0,0,10.81,4.1c1.65,1.65,3.65,3,5.3,4.74a34.61,34.61,0,0,0,5.56,5.26C171.28,57.24,177.18,60.18,181.05,57.9Z" transform="translate(0 0)"/><path class="cls-3" d="M177.85,59.24c-3.9,0-8.18-2.56-10.15-3.91a30.18,30.18,0,0,1-5.08-4.7L162,50a30,30,0,0,0-2.87-2.53c-.74-.61-1.51-1.24-2.22-1.93a10.18,10.18,0,0,1-11-4.35.52.52,0,0,1,0-.56.51.51,0,0,1,.52-.21,11.9,11.9,0,0,0,3.57.23,9.58,9.58,0,0,1-5.08-7.19h0a.51.51,0,0,1,.93-.34,13.16,13.16,0,0,0,2.47.63l.43.09a6.78,6.78,0,0,0,4.84-.57A3.3,3.3,0,0,0,155,31.54c.12-.25.25-.49.39-.73,1.67-2.94,5.35-4.88,8.26-5.48a12.57,12.57,0,0,1,10.15,2.29A10.83,10.83,0,0,1,177,26.8a5.94,5.94,0,0,1,3.37,1.6c1.9,1.9,3,5.25,3.76,7.71a30.84,30.84,0,0,1,.54,17.32,10.17,10.17,0,0,1-1.45,3.24,6.49,6.49,0,0,1-1.85,1.69A6.86,6.86,0,0,1,177.85,59.24ZM157.07,44.37a.54.54,0,0,1,.36.14c.74.74,1.53,1.4,2.37,2.09a27.18,27.18,0,0,1,2.93,2.64l.61.66a29.5,29.5,0,0,0,4.87,4.54c1.92,1.3,8.49,5.37,12.56,3l.25.44-.25-.44a5,5,0,0,0,1.57-1.4,8.2,8.2,0,0,0,1.28-2.8,29.78,29.78,0,0,0-.51-16.81c-.76-2.34-1.78-5.56-3.51-7.3a5.19,5.19,0,0,0-2.78-1.32,13.72,13.72,0,0,0-2.52.65.44.44,0,0,1-.08.15.52.52,0,0,1-.72.05h0a11.51,11.51,0,0,0-9.65-2.37c-2.69.57-6.09,2.33-7.6,5-.13.23-.25.46-.36.68a4.25,4.25,0,0,1-1.78,2.12,7.83,7.83,0,0,1-5.58.67l-.39-.08c-.9-.18-1.55-.33-2-.46A8.55,8.55,0,0,0,152,40.31a.5.5,0,0,1,0,1,13.08,13.08,0,0,1-4.54.26A9.14,9.14,0,0,0,157,44.37Z" transform="translate(0 0)"/><path class="cls-5" d="M158,51.9s-2.32,7.28-1.12,8.31,3.74-.6,3.74-.6" transform="translate(0 0)"/><path class="cls-3" d="M157.87,61a2.11,2.11,0,0,1-1.38-.48c-1.31-1.13.25-6.56,1-8.84a.49.49,0,0,1,.58-.35h0a.52.52,0,0,1,.33.64c-1.19,3.71-1.79,7.34-1.29,7.78.74.64,2.57-.28,3.15-.64a.51.51,0,0,1,.72,0,.5.5,0,0,1,0,.71h0l-.11.08h0A6.45,6.45,0,0,1,157.87,61Z" transform="translate(0 0)"/><path class="cls-5" d="M156.54,43.52c-2,2.83,0,7.1.85,10q1.77,6.09,3.81,12.11c.86,2.55,7.57.72,8.54-.38l1.82,10.49,14.12-4.84-4.55-12.78s-4.55,1.32-8.64-3.21-6.94-16.06-6.94-16.06S158.48,40.76,156.54,43.52Z" transform="translate(0 0)"/><path class="cls-3" d="M171.56,76.24a.59.59,0,0,1-.26-.07.53.53,0,0,1-.24-.36l-1.72-9.7a11.81,11.81,0,0,1-6.61,1.2,2.41,2.41,0,0,1-2-1.52c-1.36-4-2.65-8.12-3.82-12.13-.13-.49-.31-1-.49-1.56-.93-2.8-2.09-6.28-.28-8.84h0c2-2.88,9-4.83,9.3-4.91a.53.53,0,0,1,.39,0,.49.49,0,0,1,.24.32c0,.12,2.87,11.47,6.82,15.84s8,3.12,8.12,3a.53.53,0,0,1,.62.32l4.47,12.8a.5.5,0,0,1,0,.38.55.55,0,0,1-.29.27l-14.12,4.88A.57.57,0,0,1,171.56,76.24Zm-1.82-11.51h.13a.49.49,0,0,1,.36.4L172,75,185,70.52,180.81,58.7c-1.32.22-5.16.45-8.68-3.46-3.68-4.06-6.31-13.44-6.93-15.76-1.61.48-6.72,2.19-8.25,4.36s-.44,5.36.42,8c.19.56.36,1.08.51,1.58,1.17,4.06,2.45,8.12,3.81,12.09.14.43.57.71,1.27.85,2.21.44,5.86-.81,6.39-1.41a.52.52,0,0,1,.39-.25Z" transform="translate(0 0)"/><path class="cls-5" d="M160.45,62.53s3.69,1,4.47-2.68" transform="translate(0 0)"/><path class="cls-3" d="M161.58,63.18a5.46,5.46,0,0,1-1.27-.16.51.51,0,0,1-.36-.6h0a.51.51,0,0,1,.62-.36,3.74,3.74,0,0,0,2.59-.28,2.93,2.93,0,0,0,1.25-2,.49.49,0,0,1,.56-.41h0a.48.48,0,0,1,.39.57v0h0a3.85,3.85,0,0,1-1.72,2.68A4.14,4.14,0,0,1,161.58,63.18Z" transform="translate(0 0)"/><path class="cls-5" d="M166.5,52.24a5.84,5.84,0,0,1,.35-3.12,8.47,8.47,0,0,1,1-2.26,2.77,2.77,0,0,1,2-1.29,2.52,2.52,0,0,1,2,.82,4.79,4.79,0,0,1,1.08,1.88,9,9,0,0,1-1.86,9l.16-.31" transform="translate(0 0)"/><path class="cls-3" d="M171,57.7a.52.52,0,0,1-.29-.09.5.5,0,0,1-.16-.65l.15-.3a.48.48,0,0,1,.31-.26,8.64,8.64,0,0,0,1.33-7.93,4.3,4.3,0,0,0-1-1.68,2,2,0,0,0-1.56-.67,2.36,2.36,0,0,0-1.63,1,8.12,8.12,0,0,0-.88,2.13,5.41,5.41,0,0,0-.34,2.84.52.52,0,0,1-.22.71.53.53,0,0,1-.72-.22.46.46,0,0,1-.06-.23,6.23,6.23,0,0,1,.36-3.39,8.78,8.78,0,0,1,1-2.41,3.29,3.29,0,0,1,2.44-1.49,3.06,3.06,0,0,1,2.34,1,5.63,5.63,0,0,1,1.18,2,9.65,9.65,0,0,1-2,9.4A.49.49,0,0,1,171,57.7Z" transform="translate(0 0)"/><path class="cls-3" d="M169.74,65.24A17.8,17.8,0,0,0,176.13,62s-.29,6.67-5.33,8.36Z" transform="translate(0 0)"/><path class="cls-3" d="M170.84,70.84a.54.54,0,0,1-.25-.06.53.53,0,0,1-.24-.34l-1.1-5.13a.5.5,0,0,1,.38-.6h0a17.35,17.35,0,0,0,6.23-3.13.48.48,0,0,1,.69.05h0a.54.54,0,0,1,.12.34c0,.28-.37,7-5.67,8.83Zm-.5-5.27.87,4.06c3-1.33,4-4.73,4.3-6.53A18.78,18.78,0,0,1,170.34,65.57Z" transform="translate(0 0)"/><path class="cls-8" d="M207.82,138.3s-.73-49.2-8.12-60.53S173.21,63.9,164,70.67s-3.59,59.82-3.59,59.82S188.44,138.3,207.82,138.3Z" transform="translate(0 0)"/><path class="cls-8" d="M170.44,67.76s-10.93.9-17.26,6.14S140.34,106,140.34,106l20.14,4.54Z" transform="translate(0 0)"/><path class="cls-3" d="M159.79,184.24l-10.66,5.81s-4.7,14.55-2.35,21.89c0,0,15-16.24,20.93-20Z" transform="translate(0 0)"/><path class="cls-3" d="M146.79,212.44h-.11a.52.52,0,0,1-.38-.34c-2.36-7.41,2.17-21.59,2.37-22.19a.44.44,0,0,1,.24-.29l10.64-5.81a.52.52,0,0,1,.6.09l7.92,7.72a.49.49,0,0,1,.15.41.48.48,0,0,1-.23.38c-5.83,3.66-20.68,19.72-20.83,19.88A.51.51,0,0,1,146.79,212.44Zm2.78-22c-.52,1.66-4.11,13.67-2.54,20.52,2.83-3,14.32-15.22,19.89-19l-7.21-7Z" transform="translate(0 0)"/><path class="cls-9" d="M146.79,211.9s-1.12,5.81,7.33-.69,14.53-15,14.21-17.73-4.06-4.29-9.55,1.25S147.49,207.24,146.79,211.9Z" transform="translate(0 0)"/><path class="cls-3" d="M148.22,214.83a2,2,0,0,1-1.07-.28c-1.18-.73-.9-2.52-.86-2.7.76-5.07,7-12.31,12.18-17.44,3.12-3.11,6.15-4.45,8.33-3.67a3.12,3.12,0,0,1,2,2.73c.31,3.05-5.93,11.61-14.44,18.17C151.68,213.77,149.63,214.84,148.22,214.83Zm17.25-23.3c-1.71,0-4,1.28-6.3,3.6-4.12,4.12-11.16,11.78-11.89,16.88h0s-.23,1.29.39,1.66c.41.25,1.82.47,6.09-2.85,8.5-6.56,14.3-14.86,14.06-17.26a2.11,2.11,0,0,0-1.42-1.87,2.62,2.62,0,0,0-.92-.16Z" transform="translate(0 0)"/><path class="cls-6" d="M156.51,153.43h44.67a3.69,3.69,0,0,1,3.69,3.69h0a3.69,3.69,0,0,1-3.69,3.69H156.51a3.69,3.69,0,0,1-3.69-3.69h0a3.69,3.69,0,0,1,3.69-3.69Z" transform="translate(0 0)"/><path class="cls-3" d="M201.18,161.32H156.52a4.21,4.21,0,0,1,0-8.4h44.66a4.21,4.21,0,0,1,0,8.4Zm-44.66-7.42a3.19,3.19,0,0,0,0,6.36h44.66a3.19,3.19,0,0,0,0-6.36Z" transform="translate(0 0)"/><path class="cls-6" d="M200.34,242.24c0,2.84-9.31,3.16-20.78,3.16s-20.77-.32-20.77-3.16,9.29-7.1,20.77-7.1S200.34,239.45,200.34,242.24Z" transform="translate(0 0)"/><path class="cls-3" d="M179.57,245.9c-14.12,0-21.31-.57-21.31-3.67,0-3.42,9.82-7.59,21.31-7.59s21.32,4.17,21.32,7.59C200.86,245.37,193.69,245.9,179.57,245.9Zm0-10.24c-11.71,0-20.3,4.32-20.3,6.57,0,2.65,13.2,2.65,20.3,2.65s20.3,0,20.3-2.65C199.87,240,191.29,235.66,179.57,235.66Z" transform="translate(0 0)"/><path class="cls-6" d="M158.89,200.82h39.93a2,2,0,0,1,2,2h0a2,2,0,0,1-2,2H158.89a2,2,0,0,1-2-2h0A2,2,0,0,1,158.89,200.82Z" transform="translate(0 0)"/><path class="cls-3" d="M198.82,205.24H158.88a2.47,2.47,0,1,1,0-4.94h39.94a2.47,2.47,0,1,1,0,4.94Zm-39.94-3.87a1.45,1.45,0,0,0,0,2.9h39.95a1.45,1.45,0,0,0,1.45-1.45,1.44,1.44,0,0,0-1.44-1.45h-40Z" transform="translate(0 0)"/><path class="cls-3" d="M159.65,120.45a.5.5,0,0,1-.5-.48c-1.53-37.7-1.36-38.08-1.29-38.22a.51.51,0,0,1,.68-.23.52.52,0,0,1,.28.55c-.1,1.16.75,23.23,1.34,37.86a.51.51,0,0,1-.47.52h0Z" transform="translate(0 0)"/><path class="cls-8" d="M192.13,70.82s9.19,1,14.07,11.17c2.63,5.48,9.38,23.18,9.38,23.18l-20.3,2.33Z" transform="translate(0 0)"/><path class="cls-10" d="M103.83,120.68h-2.49a.5.5,0,0,1-.4-.58v0a.51.51,0,0,1,.4-.4h2.53a2.12,2.12,0,0,0,0-4.24h0a.5.5,0,0,1-.4-.58v0a.51.51,0,0,1,.4-.4,3.14,3.14,0,0,1,0,6.28Z" transform="translate(0 0)"/><path class="cls-4" d="M108.65,121.9c0,1.64-5.51,3-12.31,3S84,123.59,84,121.9Z" transform="translate(0 0)"/><path class="cls-3" d="M96.34,125.31c-5.15,0-12.82-.92-12.82-3.46a.52.52,0,0,1,.51-.5h24.62a.5.5,0,0,1,.51.5C109.13,124.39,101.49,125.31,96.34,125.31Z" transform="translate(0 0)"/><polygon class="cls-10" points="102.65 121.85 90.03 121.85 87.62 112.44 105.06 112.44 102.65 121.85"/><path class="cls-3" d="M276.77,162.24a12.56,12.56,0,0,0-1.43-6.75c-.91-1.5-2.3-2.7-3-4.28-1.28-2.74-.37-6-.68-9a11.18,11.18,0,0,0-3.15-6.7c-1.58-1.59-3.62-2.68-5.08-4.35-2.47-2.72-3.18-6.55-4.58-10A25,25,0,0,0,249,109.6c2.69,5.41-3.44,12.3-.67,17.66.88,1.71,2.57,3,3.21,4.75,1.56,4.36-3.64,9.07-2,13.38.83,2.16,3.13,3.41,4.21,5.45,1.45,2.76.31,6.09.42,9.22.17,4.29,2.79,8.12,5.89,11.1,1.93,1.86,4.06,3.46,6.17,5.14,2.5,2,3.56,4.06,5.76.89A27.73,27.73,0,0,0,276.77,162.24Z" transform="translate(0 0)"/><path class="cls-3" d="M279.56,164.68c-.8-3.32-1.38-6.92,0-10.06,1.52-3.55,5.35-6.09,5.8-9.89.28-2.51-1-5.07-.49-7.54s2.53-4.17,4.2-6a25.19,25.19,0,0,0,6.49-15.29c2.41,3.17,4.86,6.43,6.17,10.21s1.34,8.21-.9,11.52a10.27,10.27,0,0,0-1.56,2.55c-.76,2.45,1.34,4.74,2.42,7.06a8.13,8.13,0,0,1-.76,8.32c-2.2,2.74-6.43,3.81-7.52,7.11a17,17,0,0,0-.37,3.77,11.16,11.16,0,0,1-8,9.54c-2.59.63-2.54-.4-3-2.58C281.39,170.44,280.26,167.6,279.56,164.68Z" transform="translate(0 0)"/><path class="cls-3" d="M271.34,140.78c-1.84-6.38-2.58-13-4.53-19.4a105,105,0,0,0-6-14.47l7.92,3.34c2.54,1.07,5.29,2.33,6.48,4.81,2.09,4.33-1.65,9.86.53,14.12.77,1.51,2.16,2.58,3.14,3.95,2.33,3.27,2,7.77.69,11.58-.55,1.64-2.94,10.15-5.08,7.75-.86-.94-.93-4.45-1.29-5.74C272.55,144.73,271.87,142.77,271.34,140.78Z" transform="translate(0 0)"/><path class="cls-3" d="M275.82,225.55c-1.57-10.43-6.52-47.2-6.56-47.57l1-.14c.05.38,5,37.14,6.57,47.55Z" transform="translate(0 0)"/><path class="cls-3" d="M277.34,235.42h-1c.1-13.19,5.46-59.88,8.19-62.86l.75.68C282.85,175.83,277.4,221.24,277.34,235.42Z" transform="translate(0 0)"/><path class="cls-3" d="M280,233.06h-1c1.18-26.73-4.48-82.83-4.55-83.38l1-.11C275.49,150.09,281.13,206.24,280,233.06Z" transform="translate(0 0)"/><path class="cls-11" d="M262.05,195.69h29.44l-2,33.49c-.37,5.8-4.65,10.28-9.83,10.28H274c-5.17,0-9.46-4.48-9.82-10.28Z" transform="translate(0 0)"/><path class="cls-11" d="M279.64,240h-5.7c-5.43,0-10-4.73-10.35-10.78l-2-33.49a.52.52,0,0,1,.48-.56h29.48a.52.52,0,0,1,.37.16.53.53,0,0,1,.14.4l-2,33.49C289.61,235.24,285.07,240,279.64,240Zm-17-43.71,2,32.92c.33,5.49,4.43,9.79,9.3,9.79h5.7c4.87,0,9-4.3,9.3-9.79l2-32.92Z" transform="translate(0 0)"/><path class="cls-8" d="M258.2,34.7H244.13a7.91,7.91,0,0,0,7.55,5.67h0a7.88,7.88,0,0,0,7.56-5.67Z" transform="translate(0 0)"/><path class="cls-3" d="M277,35.24H226.34a.5.5,0,0,1-.5-.5c0-9.23,11.58-16.73,25.82-16.73s25.83,7.5,25.83,16.73a.5.5,0,0,1-.5.5Z" transform="translate(0 0)"/><path class="cls-3" d="M251.68,19a.5.5,0,0,1-.51-.49h0V.41a.5.5,0,0,1,.58-.4h0a.51.51,0,0,1,.4.4V18.48A.51.51,0,0,1,251.68,19Z" transform="translate(0 0)"/><path class="cls-12" d="M31.68,187a36.09,36.09,0,0,0-8.41-5.2c-.27,9.46,3.57,18.15,7.07,24.15H36a69.48,69.48,0,0,1-4.25-18.2C31.71,187.43,31.7,187.24,31.68,187Z" transform="translate(0 0)"/><path class="cls-12" d="M48.54,190.15c.08-.15.17-.28.25-.43-2.94-14.58-13.88-23.38-13.88-23.38a49.25,49.25,0,0,0-2.16,21.22c0,.31.07.62.1.94a69.11,69.11,0,0,0,4.28,16.74c.79,0,3.74,0,6.45.1,0-3.11.88-7.89,4.23-14Z" transform="translate(0 0)"/><path class="cls-12" d="M61.83,179.41h-.16c-1,.08-6.27.92-12,10.66L49,191.3c-3.53,6.4-4.27,11.32-4.16,14.58h11C59.13,200.9,64.34,190.75,61.83,179.41Z" transform="translate(0 0)"/><polygon class="cls-3" points="53.77 222.29 32.22 222.29 28.75 204.87 57.24 204.87 53.77 222.29"/></svg>
+                    <div class="imgs-group">
+                        <img src="assets/logos/keep.png" alt="KeepCoding-logo">
+                        <img src="assets/logos/utpl.png" alt="UniversidadTecnicaParticularDeLoja-logo">
                     </div>
                 </div>
+            </div>
         </section>
-        <section id="projects" class="portafolio section-styles">
+        <section id="projects" class="portfolio section-styles">
+            <img class="project-bg" src="assets/illustrations/octopus.svg" alt="octopus-programmer-illustration">
             <h2 class="subtit-section">Proyectos</h2>
             <p>
-                Ultimos proyectos realizados
+                Ultimos <span class="span-year proj-name">proyectos</span> realizados
             </p>
             <div class="cards-portaf flex-content">
-                <div class="card-relative" data-aos="fade-up" data-aos-duration="1200">
-                    <a href="https://candid-panda-d2ffa4.netlify.app/#/" target="_blank">
-                        <div class="card-relative_content-icon">
-                            <span class="card-relative_icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 34 32" class="technology-icon" id="technology-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M19.314 15.987c0 1.321-1.071 2.392-2.392 2.392s-2.392-1.071-2.392-2.392c0-1.321 1.071-2.392 2.392-2.392s2.392 1.071 2.392 2.392z"></path><path d="M16.922 24.783c1.878 1.826 3.729 2.906 5.221 2.906 0.489 0 0.952-0.103 1.337-0.334 1.337-0.772 1.826-2.701 1.363-5.453-0.077-0.489-0.18-0.977-0.309-1.492 0.514-0.154 0.977-0.309 1.44-0.463 2.598-1.003 4.038-2.392 4.038-3.909 0-1.543-1.44-2.932-4.038-3.909-0.463-0.18-0.926-0.334-1.44-0.463 0.129-0.514 0.232-1.003 0.309-1.492 0.437-2.803-0.051-4.758-1.389-5.53-0.386-0.231-0.849-0.334-1.337-0.334-1.466 0-3.344 1.080-5.221 2.906-1.852-1.826-3.704-2.906-5.195-2.906-0.489 0-0.952 0.103-1.337 0.334-1.337 0.772-1.826 2.701-1.363 5.453 0.077 0.489 0.18 0.977 0.309 1.492-0.514 0.154-0.977 0.309-1.44 0.463-2.598 1.003-4.038 2.392-4.038 3.909 0 1.543 1.44 2.932 4.038 3.909 0.463 0.18 0.926 0.334 1.44 0.463-0.129 0.514-0.232 1.003-0.309 1.492-0.437 2.752 0.051 4.707 1.363 5.453 0.386 0.232 0.849 0.334 1.337 0.334 1.492 0.051 3.344-1.029 5.221-2.829v0zM15.481 21.311c0.463 0.026 0.952 0.026 1.44 0.026s0.977 0 1.44-0.026c-0.463 0.617-0.952 1.183-1.44 1.723-0.489-0.54-0.977-1.106-1.44-1.723zM12.292 18.662c0.257 0.437 0.489 0.849 0.772 1.26-0.797-0.103-1.543-0.232-2.263-0.386 0.232-0.694 0.489-1.415 0.797-2.135 0.206 0.411 0.437 0.849 0.694 1.26zM10.8 12.463c0.72-0.154 1.466-0.283 2.263-0.386-0.257 0.412-0.514 0.823-0.772 1.26s-0.489 0.849-0.694 1.286c-0.334-0.746-0.592-1.466-0.797-2.161zM12.215 15.987c0.334-0.694 0.694-1.389 1.106-2.083 0.386-0.669 0.823-1.337 1.26-2.006 0.772-0.051 1.543-0.077 2.341-0.077 0.823 0 1.595 0.026 2.341 0.077 0.463 0.669 0.874 1.337 1.26 2.006 0.412 0.694 0.772 1.389 1.106 2.083-0.334 0.694-0.694 1.389-1.106 2.083-0.386 0.669-0.823 1.337-1.26 2.006-0.772 0.051-1.543 0.077-2.341 0.077-0.823 0-1.595-0.026-2.341-0.077-0.463-0.669-0.874-1.337-1.26-2.006-0.412-0.695-0.772-1.389-1.106-2.083v0zM22.272 14.598l-0.694-1.286c-0.257-0.437-0.489-0.849-0.772-1.26 0.797 0.103 1.543 0.232 2.263 0.386-0.231 0.72-0.489 1.44-0.797 2.161v0zM22.272 17.376c0.309 0.72 0.566 1.44 0.797 2.135-0.72 0.154-1.466 0.283-2.263 0.386 0.257-0.412 0.514-0.823 0.772-1.26 0.232-0.386 0.463-0.823 0.694-1.26v0zM22.863 26.301c-0.206 0.129-0.463 0.18-0.746 0.18-1.26 0-2.829-1.029-4.372-2.572 0.746-0.797 1.466-1.698 2.186-2.701 1.209-0.103 2.366-0.283 3.447-0.54 0.129 0.463 0.206 0.926 0.283 1.389 0.36 2.186 0.077 3.755-0.797 4.244zM24.201 12.746c2.881 0.823 4.604 2.083 4.604 3.241 0 1.003-1.183 2.006-3.266 2.804-0.412 0.154-0.874 0.309-1.337 0.437-0.334-1.055-0.746-2.135-1.26-3.241 0.514-1.106 0.952-2.186 1.26-3.241v0zM22.143 5.493c0.283 0 0.514 0.051 0.746 0.18 0.849 0.489 1.157 2.032 0.797 4.244-0.077 0.437-0.18 0.9-0.283 1.389-1.080-0.232-2.238-0.412-3.447-0.54-0.694-1.003-1.44-1.903-2.186-2.701 1.543-1.518 3.112-2.572 4.372-2.572zM18.362 10.663c-0.463-0.026-0.952-0.026-1.44-0.026s-0.977 0-1.44 0.026c0.463-0.617 0.952-1.183 1.44-1.723 0.489 0.54 0.977 1.132 1.44 1.723v0zM10.98 5.673c0.206-0.129 0.463-0.18 0.746-0.18 1.26 0 2.829 1.029 4.372 2.572-0.746 0.797-1.466 1.697-2.186 2.701-1.209 0.103-2.366 0.283-3.447 0.54-0.129-0.463-0.206-0.926-0.283-1.389-0.36-2.186-0.077-3.729 0.797-4.244v0zM9.643 19.228c-2.881-0.823-4.604-2.083-4.604-3.241 0-1.003 1.183-2.006 3.266-2.803 0.412-0.154 0.874-0.309 1.337-0.437 0.334 1.055 0.746 2.135 1.26 3.241-0.514 1.106-0.952 2.212-1.26 3.241zM10.183 22.057c0.077-0.437 0.18-0.9 0.283-1.389 1.080 0.232 2.238 0.412 3.447 0.54 0.694 1.003 1.44 1.903 2.186 2.701-1.543 1.517-3.112 2.572-4.372 2.572-0.283 0-0.514-0.051-0.746-0.18-0.875-0.489-1.157-2.058-0.797-4.244z"></path></svg>
-                                React
-                            </span>
-                            <span class="card-relative_icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" class="icon-technology" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4.665 3.411l2.063 23.176 9.258 2.574 9.284-2.578 2.065-23.172h-22.671zM8.951 8.911l-0.068-0.763h7.107v2.842h-4.005l0.259 2.911h3.746v2.842h-6.341l-0.698-7.833zM22.518 14.665l-0.667 7.483-0.043 0.48-5.822 1.616-5.814-1.616-0.398-4.463h2.849l0.202 2.267 3.163 0.854 3.165-0.856 0.329-3.686h-3.485v-2.842h6.587l-0.069 0.763zM23.032 8.911l-0.129 1.441-0.057 0.639h-6.846v-2.842h7.1l-0.068 0.762z"></path></svg>
-                                Html
-                            </span>
-                            <span class="card-relative_icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" class="icon-technology" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16.017 21.044v0zM4.743 3.519l2.049 22.981 9.194 2.552 9.22-2.556 2.051-22.977h-22.514zM23 8.775l-0.693 7.767h-0l-0.48 5.359-0.042 0.476-5.781 1.603-5.773-1.603-0.395-4.426h2.829l0.201 2.248 3.142 0.847 0.008-0.002 0.002-0 3.134-0.846 0.329-3.655-6.579 0-0.056-0.633-0.129-1.429-0.067-0.756 7.081-0 0.258-2.886h-10.786l-0.056-0.634-0.129-1.429-0.067-0.756h14.118l-0.068 0.756z"></path></svg>
-                                Css
-                            </span>
-                        </div>
+                <div class="card-content" data-aos="fade-up" data-aos-duration="1000">
+                    <a class="card-link" href="https://candid-panda-d2ffa4.netlify.app/#/" target="_blank">
+                        <span class="span-view"><i class="fa-solid fa-eye"></i></span>
                         <div class="card card-img1">
                         </div>
                     </a>
-                    <p>Web E-commerce</p>
-                    <div class="btn-lateral">
+                    <div class="card-text">
+                        <h3 class="txt-title">U-commerce</h3>
+                        <p>Web app responsive tipo e-commerce creada con <span class="span-frame">React</span> como 
+                            framework, <span class="span-style">Css</span> para los estilos y 
+                            <span class="span-tool">Redux</span> para el manejo de estado.</p>
                         <a href="https://github.com/MalanFernando/E-commerce" target="_blank"><i class="btn-git fa-brands fa-github"></i></a>
-                        <a href="https://candid-panda-d2ffa4.netlify.app/#/" target="_blank"><i class="btn-link fa-solid fa-rocket"></i></a>
                     </div>
                 </div>
-                <div class="card-relative" data-aos="fade-up" data-aos-duration="1600">
-                    <a href="https://glowing-cocada-605b6a.netlify.app/#/" target="_blank">
-                        <div class="card-relative_content-icon">
-                            <span class="card-relative_icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 34 32" class="technology-icon" id="technology-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M19.314 15.987c0 1.321-1.071 2.392-2.392 2.392s-2.392-1.071-2.392-2.392c0-1.321 1.071-2.392 2.392-2.392s2.392 1.071 2.392 2.392z"></path><path d="M16.922 24.783c1.878 1.826 3.729 2.906 5.221 2.906 0.489 0 0.952-0.103 1.337-0.334 1.337-0.772 1.826-2.701 1.363-5.453-0.077-0.489-0.18-0.977-0.309-1.492 0.514-0.154 0.977-0.309 1.44-0.463 2.598-1.003 4.038-2.392 4.038-3.909 0-1.543-1.44-2.932-4.038-3.909-0.463-0.18-0.926-0.334-1.44-0.463 0.129-0.514 0.232-1.003 0.309-1.492 0.437-2.803-0.051-4.758-1.389-5.53-0.386-0.231-0.849-0.334-1.337-0.334-1.466 0-3.344 1.080-5.221 2.906-1.852-1.826-3.704-2.906-5.195-2.906-0.489 0-0.952 0.103-1.337 0.334-1.337 0.772-1.826 2.701-1.363 5.453 0.077 0.489 0.18 0.977 0.309 1.492-0.514 0.154-0.977 0.309-1.44 0.463-2.598 1.003-4.038 2.392-4.038 3.909 0 1.543 1.44 2.932 4.038 3.909 0.463 0.18 0.926 0.334 1.44 0.463-0.129 0.514-0.232 1.003-0.309 1.492-0.437 2.752 0.051 4.707 1.363 5.453 0.386 0.232 0.849 0.334 1.337 0.334 1.492 0.051 3.344-1.029 5.221-2.829v0zM15.481 21.311c0.463 0.026 0.952 0.026 1.44 0.026s0.977 0 1.44-0.026c-0.463 0.617-0.952 1.183-1.44 1.723-0.489-0.54-0.977-1.106-1.44-1.723zM12.292 18.662c0.257 0.437 0.489 0.849 0.772 1.26-0.797-0.103-1.543-0.232-2.263-0.386 0.232-0.694 0.489-1.415 0.797-2.135 0.206 0.411 0.437 0.849 0.694 1.26zM10.8 12.463c0.72-0.154 1.466-0.283 2.263-0.386-0.257 0.412-0.514 0.823-0.772 1.26s-0.489 0.849-0.694 1.286c-0.334-0.746-0.592-1.466-0.797-2.161zM12.215 15.987c0.334-0.694 0.694-1.389 1.106-2.083 0.386-0.669 0.823-1.337 1.26-2.006 0.772-0.051 1.543-0.077 2.341-0.077 0.823 0 1.595 0.026 2.341 0.077 0.463 0.669 0.874 1.337 1.26 2.006 0.412 0.694 0.772 1.389 1.106 2.083-0.334 0.694-0.694 1.389-1.106 2.083-0.386 0.669-0.823 1.337-1.26 2.006-0.772 0.051-1.543 0.077-2.341 0.077-0.823 0-1.595-0.026-2.341-0.077-0.463-0.669-0.874-1.337-1.26-2.006-0.412-0.695-0.772-1.389-1.106-2.083v0zM22.272 14.598l-0.694-1.286c-0.257-0.437-0.489-0.849-0.772-1.26 0.797 0.103 1.543 0.232 2.263 0.386-0.231 0.72-0.489 1.44-0.797 2.161v0zM22.272 17.376c0.309 0.72 0.566 1.44 0.797 2.135-0.72 0.154-1.466 0.283-2.263 0.386 0.257-0.412 0.514-0.823 0.772-1.26 0.232-0.386 0.463-0.823 0.694-1.26v0zM22.863 26.301c-0.206 0.129-0.463 0.18-0.746 0.18-1.26 0-2.829-1.029-4.372-2.572 0.746-0.797 1.466-1.698 2.186-2.701 1.209-0.103 2.366-0.283 3.447-0.54 0.129 0.463 0.206 0.926 0.283 1.389 0.36 2.186 0.077 3.755-0.797 4.244zM24.201 12.746c2.881 0.823 4.604 2.083 4.604 3.241 0 1.003-1.183 2.006-3.266 2.804-0.412 0.154-0.874 0.309-1.337 0.437-0.334-1.055-0.746-2.135-1.26-3.241 0.514-1.106 0.952-2.186 1.26-3.241v0zM22.143 5.493c0.283 0 0.514 0.051 0.746 0.18 0.849 0.489 1.157 2.032 0.797 4.244-0.077 0.437-0.18 0.9-0.283 1.389-1.080-0.232-2.238-0.412-3.447-0.54-0.694-1.003-1.44-1.903-2.186-2.701 1.543-1.518 3.112-2.572 4.372-2.572zM18.362 10.663c-0.463-0.026-0.952-0.026-1.44-0.026s-0.977 0-1.44 0.026c0.463-0.617 0.952-1.183 1.44-1.723 0.489 0.54 0.977 1.132 1.44 1.723v0zM10.98 5.673c0.206-0.129 0.463-0.18 0.746-0.18 1.26 0 2.829 1.029 4.372 2.572-0.746 0.797-1.466 1.697-2.186 2.701-1.209 0.103-2.366 0.283-3.447 0.54-0.129-0.463-0.206-0.926-0.283-1.389-0.36-2.186-0.077-3.729 0.797-4.244v0zM9.643 19.228c-2.881-0.823-4.604-2.083-4.604-3.241 0-1.003 1.183-2.006 3.266-2.803 0.412-0.154 0.874-0.309 1.337-0.437 0.334 1.055 0.746 2.135 1.26 3.241-0.514 1.106-0.952 2.212-1.26 3.241zM10.183 22.057c0.077-0.437 0.18-0.9 0.283-1.389 1.080 0.232 2.238 0.412 3.447 0.54 0.694 1.003 1.44 1.903 2.186 2.701-1.543 1.517-3.112 2.572-4.372 2.572-0.283 0-0.514-0.051-0.746-0.18-0.875-0.489-1.157-2.058-0.797-4.244z"></path></svg>
-                                React
-                            </span>
-                            <span class="card-relative_icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" class="icon-technology" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4.665 3.411l2.063 23.176 9.258 2.574 9.284-2.578 2.065-23.172h-22.671zM8.951 8.911l-0.068-0.763h7.107v2.842h-4.005l0.259 2.911h3.746v2.842h-6.341l-0.698-7.833zM22.518 14.665l-0.667 7.483-0.043 0.48-5.822 1.616-5.814-1.616-0.398-4.463h2.849l0.202 2.267 3.163 0.854 3.165-0.856 0.329-3.686h-3.485v-2.842h6.587l-0.069 0.763zM23.032 8.911l-0.129 1.441-0.057 0.639h-6.846v-2.842h7.1l-0.068 0.762z"></path></svg>
-                                Html
-                            </span>
-                            <span class="card-relative_icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" class="icon-technology" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16.017 21.044v0zM4.743 3.519l2.049 22.981 9.194 2.552 9.22-2.556 2.051-22.977h-22.514zM23 8.775l-0.693 7.767h-0l-0.48 5.359-0.042 0.476-5.781 1.603-5.773-1.603-0.395-4.426h2.829l0.201 2.248 3.142 0.847 0.008-0.002 0.002-0 3.134-0.846 0.329-3.655-6.579 0-0.056-0.633-0.129-1.429-0.067-0.756 7.081-0 0.258-2.886h-10.786l-0.056-0.634-0.129-1.429-0.067-0.756h14.118l-0.068 0.756z"></path></svg>
-                                Css
-                            </span>
-                        </div>
+                <div class="card-content" data-aos="fade-up" data-aos-duration="1300">
+                    <a class="card-link" href="https://glowing-cocada-605b6a.netlify.app/#/" target="_blank">
+                        <span class="span-view"><i class="fa-solid fa-eye"></i></span>
                         <div class="card card-img2">
                         </div>
                     </a>
-                    <p>Pokedex</p>
-                    <div class="btn-lateral">
+                    <div class="card-text">
+                        <h3 class="txt-title">Pokedex</h3>
+                        <p>Web app con informacion sobre los
+                            pokemons, uso de <span class="span-frame">React</span> como 
+                            framework, <span class="span-style">Css</span> para los estilos y
+                            <span class="span-tool">local storage</span> para almacenar el nombre de usuario.
                         <a href="https://github.com/MalanFernando/PokeApi" target="_blank"><i class="btn-git fa-brands fa-github"></i></a>
-                        <a href="https://glowing-cocada-605b6a.netlify.app/#/" target="_blank"><i class="btn-link fa-solid fa-rocket"></i></a>
                     </div>
                 </div>
-                <div class="card-relative" data-aos="fade-up" data-aos-duration="2000">
-                    <a href="https://sparkly-liger-6ebb6a.netlify.app/" target="_blank">
-                        <div class="card-relative_content-icon">
-                            <span class="card-relative_icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 34 32" class="technology-icon" id="technology-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M19.314 15.987c0 1.321-1.071 2.392-2.392 2.392s-2.392-1.071-2.392-2.392c0-1.321 1.071-2.392 2.392-2.392s2.392 1.071 2.392 2.392z"></path><path d="M16.922 24.783c1.878 1.826 3.729 2.906 5.221 2.906 0.489 0 0.952-0.103 1.337-0.334 1.337-0.772 1.826-2.701 1.363-5.453-0.077-0.489-0.18-0.977-0.309-1.492 0.514-0.154 0.977-0.309 1.44-0.463 2.598-1.003 4.038-2.392 4.038-3.909 0-1.543-1.44-2.932-4.038-3.909-0.463-0.18-0.926-0.334-1.44-0.463 0.129-0.514 0.232-1.003 0.309-1.492 0.437-2.803-0.051-4.758-1.389-5.53-0.386-0.231-0.849-0.334-1.337-0.334-1.466 0-3.344 1.080-5.221 2.906-1.852-1.826-3.704-2.906-5.195-2.906-0.489 0-0.952 0.103-1.337 0.334-1.337 0.772-1.826 2.701-1.363 5.453 0.077 0.489 0.18 0.977 0.309 1.492-0.514 0.154-0.977 0.309-1.44 0.463-2.598 1.003-4.038 2.392-4.038 3.909 0 1.543 1.44 2.932 4.038 3.909 0.463 0.18 0.926 0.334 1.44 0.463-0.129 0.514-0.232 1.003-0.309 1.492-0.437 2.752 0.051 4.707 1.363 5.453 0.386 0.232 0.849 0.334 1.337 0.334 1.492 0.051 3.344-1.029 5.221-2.829v0zM15.481 21.311c0.463 0.026 0.952 0.026 1.44 0.026s0.977 0 1.44-0.026c-0.463 0.617-0.952 1.183-1.44 1.723-0.489-0.54-0.977-1.106-1.44-1.723zM12.292 18.662c0.257 0.437 0.489 0.849 0.772 1.26-0.797-0.103-1.543-0.232-2.263-0.386 0.232-0.694 0.489-1.415 0.797-2.135 0.206 0.411 0.437 0.849 0.694 1.26zM10.8 12.463c0.72-0.154 1.466-0.283 2.263-0.386-0.257 0.412-0.514 0.823-0.772 1.26s-0.489 0.849-0.694 1.286c-0.334-0.746-0.592-1.466-0.797-2.161zM12.215 15.987c0.334-0.694 0.694-1.389 1.106-2.083 0.386-0.669 0.823-1.337 1.26-2.006 0.772-0.051 1.543-0.077 2.341-0.077 0.823 0 1.595 0.026 2.341 0.077 0.463 0.669 0.874 1.337 1.26 2.006 0.412 0.694 0.772 1.389 1.106 2.083-0.334 0.694-0.694 1.389-1.106 2.083-0.386 0.669-0.823 1.337-1.26 2.006-0.772 0.051-1.543 0.077-2.341 0.077-0.823 0-1.595-0.026-2.341-0.077-0.463-0.669-0.874-1.337-1.26-2.006-0.412-0.695-0.772-1.389-1.106-2.083v0zM22.272 14.598l-0.694-1.286c-0.257-0.437-0.489-0.849-0.772-1.26 0.797 0.103 1.543 0.232 2.263 0.386-0.231 0.72-0.489 1.44-0.797 2.161v0zM22.272 17.376c0.309 0.72 0.566 1.44 0.797 2.135-0.72 0.154-1.466 0.283-2.263 0.386 0.257-0.412 0.514-0.823 0.772-1.26 0.232-0.386 0.463-0.823 0.694-1.26v0zM22.863 26.301c-0.206 0.129-0.463 0.18-0.746 0.18-1.26 0-2.829-1.029-4.372-2.572 0.746-0.797 1.466-1.698 2.186-2.701 1.209-0.103 2.366-0.283 3.447-0.54 0.129 0.463 0.206 0.926 0.283 1.389 0.36 2.186 0.077 3.755-0.797 4.244zM24.201 12.746c2.881 0.823 4.604 2.083 4.604 3.241 0 1.003-1.183 2.006-3.266 2.804-0.412 0.154-0.874 0.309-1.337 0.437-0.334-1.055-0.746-2.135-1.26-3.241 0.514-1.106 0.952-2.186 1.26-3.241v0zM22.143 5.493c0.283 0 0.514 0.051 0.746 0.18 0.849 0.489 1.157 2.032 0.797 4.244-0.077 0.437-0.18 0.9-0.283 1.389-1.080-0.232-2.238-0.412-3.447-0.54-0.694-1.003-1.44-1.903-2.186-2.701 1.543-1.518 3.112-2.572 4.372-2.572zM18.362 10.663c-0.463-0.026-0.952-0.026-1.44-0.026s-0.977 0-1.44 0.026c0.463-0.617 0.952-1.183 1.44-1.723 0.489 0.54 0.977 1.132 1.44 1.723v0zM10.98 5.673c0.206-0.129 0.463-0.18 0.746-0.18 1.26 0 2.829 1.029 4.372 2.572-0.746 0.797-1.466 1.697-2.186 2.701-1.209 0.103-2.366 0.283-3.447 0.54-0.129-0.463-0.206-0.926-0.283-1.389-0.36-2.186-0.077-3.729 0.797-4.244v0zM9.643 19.228c-2.881-0.823-4.604-2.083-4.604-3.241 0-1.003 1.183-2.006 3.266-2.803 0.412-0.154 0.874-0.309 1.337-0.437 0.334 1.055 0.746 2.135 1.26 3.241-0.514 1.106-0.952 2.212-1.26 3.241zM10.183 22.057c0.077-0.437 0.18-0.9 0.283-1.389 1.080 0.232 2.238 0.412 3.447 0.54 0.694 1.003 1.44 1.903 2.186 2.701-1.543 1.517-3.112 2.572-4.372 2.572-0.283 0-0.514-0.051-0.746-0.18-0.875-0.489-1.157-2.058-0.797-4.244z"></path></svg>
-                                React
-                            </span>
-                            <span class="card-relative_icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" class="icon-technology" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4.665 3.411l2.063 23.176 9.258 2.574 9.284-2.578 2.065-23.172h-22.671zM8.951 8.911l-0.068-0.763h7.107v2.842h-4.005l0.259 2.911h3.746v2.842h-6.341l-0.698-7.833zM22.518 14.665l-0.667 7.483-0.043 0.48-5.822 1.616-5.814-1.616-0.398-4.463h2.849l0.202 2.267 3.163 0.854 3.165-0.856 0.329-3.686h-3.485v-2.842h6.587l-0.069 0.763zM23.032 8.911l-0.129 1.441-0.057 0.639h-6.846v-2.842h7.1l-0.068 0.762z"></path></svg>
-                                Html
-                            </span>
-                            <span class="card-relative_icon">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" class="icon-technology" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16.017 21.044v0zM4.743 3.519l2.049 22.981 9.194 2.552 9.22-2.556 2.051-22.977h-22.514zM23 8.775l-0.693 7.767h-0l-0.48 5.359-0.042 0.476-5.781 1.603-5.773-1.603-0.395-4.426h2.829l0.201 2.248 3.142 0.847 0.008-0.002 0.002-0 3.134-0.846 0.329-3.655-6.579 0-0.056-0.633-0.129-1.429-0.067-0.756 7.081-0 0.258-2.886h-10.786l-0.056-0.634-0.129-1.429-0.067-0.756h14.118l-0.068 0.756z"></path></svg>
-                                Css
-                            </span>
-                        </div>
+                <div class="card-content" data-aos="fade-up" data-aos-duration="1600">
+                    <a class="card-link" href="https://sparkly-liger-6ebb6a.netlify.app/" target="_blank">
+                        <span class="span-view"><i class="fa-solid fa-eye"></i></span>
                         <div class="card card-img3">
                         </div>
                     </a>
-                    <p>Web Rick and Morty</p>
-                    <div class="btn-lateral">
+                    <div class="card-text">
+                        <h3 class="txt-title">Rick & Morty-wiki</h3>
+                        <p>Web responsive tipo wiki acerca de los
+                            personajes de la serie, creada con <span class="span-frame">React</span> 
+                            como framework, <span class="span-style">Css</span> para los
+                            estilos y <span class="span-tool">Redux</span> para el manejo de 
+                            estado.</p>
                         <a href="https://github.com/MalanFernando/Rick_and_Morty" target="_blank"><i class="btn-git fa-brands fa-github"></i></a>
-                        <a href="https://sparkly-liger-6ebb6a.netlify.app/" target="_blank"><i class="btn-link fa-solid fa-rocket"></i></a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer id="contact" class="color-section">
-        <div class="contacto section-styles">
+    <footer id="contact" class="contact-section">
+        <img class="contact-img" src="assets/illustrations/scientific.svg" alt="scientific-illustration">
+        <div class="contact-info section-styles">
             <h2 class="subtit-section">Contacto</h2>
-            <div class="conta-content flex-content">
+            <div class="conta-content">
                 <div class="conte-section">
                     <p>Let's make something amazing together.</p>
                     <p>Start by <span>saying hi</span></p>
                 </div>
                 <div class="conte-section">
                     <p class="email">Email</p>
-                    <a class="mail" href="mailto:fernando-perugachi@hotmail.com" target="_blank" aria-label="Email">fernando-p...@hotmail.com</a>
+                    <a class="mail" href="mailto:fernando-perugachi@hotmail.com" target="_blank" aria-label="Email">fernando-perugachi@hotmail.com</a>
                 </div>
-                <div class="conte-section">
-                    <p class="social">Social</p>
-                    <div class="icons-foot">
-                        <a href="https://github.com/MalanFernando" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/fernando-david-malan-perugachi-b48b6321a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://twitter.com/fernandomalan96" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
+            </div>
+            <div class="conta-bottom">
+                <a href="#home"><p class="logo">Da<span class="color-span"><span class="span-b">b</span><span class="span-i">i</span><span class="span-t">t</span></span></p></a>
+                <div class="icons-foot">
+                    <a href="https://github.com/MalanFernando" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/fernando-david-malan-perugachi-b48b6321a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/fernandomalan96" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
         </div>
-        <p class="slogan">Hecho con <i class="fa-solid fa-heart"></i> por Dabit</p>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
