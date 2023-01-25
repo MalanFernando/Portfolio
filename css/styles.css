@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Recoleta-SemiBold";
-    src: url("/fonts/Recoleta-SemiBold.woff2") format("woff2");
+    src: url("../fonts/Recoleta-SemiBold.woff2") format("woff2");
 }
 @font-face {
     font-family: "Inter-Black";
-    src: url("/fonts/Inter-Black.woff2") format("woff2");
+    src: url("../fonts/Inter-Black.woff2") format("woff2");
 }
 @font-face {
     font-family: "Inter-Medium";
-    src: url("/fonts/Inter-Medium.woff2") format("woff2");
+    src: url("../fonts/Inter-Medium.woff2") format("woff2");
 }
 
 :root{
@@ -95,6 +95,10 @@ body::-webkit-scrollbar-thumb {
 
 .logo, .presentation, .color-name, .info-nickname, .subtit-section, .about-span, .sub-quotes, .txt-title{
     font-family: "Recoleta-SemiBold", sans-serif;
+}
+
+.delete_extra_space{
+    overflow-x: hidden;
 }
 
 /* MENU */
@@ -519,10 +523,12 @@ body::-webkit-scrollbar-thumb {
     border-radius: 24px;
 }
 .hab-section .hearth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--yellow);
     color: var(--purpleBackground);
     font-size: 1.7rem;
-    padding: 2px 4px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -592,10 +598,9 @@ body::-webkit-scrollbar-thumb {
 .forma-title{
     max-width: 400px;
     line-height: 7.3rem;
-    /* font-size: 5.4rem; */
 }
 .title-bg::after{
-    font-family: "Inter-Black";
+    font-family: "Inter-Black", sans-serif;
     position: absolute;
     left: -10px;
     font-size: 8.8rem;
