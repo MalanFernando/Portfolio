@@ -1,5 +1,5 @@
 const menuNav = document.querySelector(".menu-nav")
-const toggleBtn = document.querySelector(".toggle-btn")
+const toggleBtn = document.querySelector(".menu-button")
 const iconHamburger = document.querySelector(".hamb-btn")
 const iconClose= document.querySelector(".cls-btn")
 const menuNavLinks = document.querySelectorAll('.menu-nav a[href^="#"]')
