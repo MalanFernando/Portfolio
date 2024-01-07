@@ -1,259 +1,829 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dabit</title>
-    <script src="https://kit.fontawesome.com/0563dd7483.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="assets/favicon/favicon.ico" type="image/ico">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="bg-header">
+    </div>
     <header id="home">
-        <div class="menu ">
-            <div class="menu-position section-styles">
-                <a href="#home"><p class="logo">Da<span class="color-span"><span class="span-b">b</span><span class="span-i">i</span><span class="span-t">t</span></span></p></a>
-                <button class="menu-button">
-                    <i class="hamb-btn fa-solid fa-bars"></i>
-                    <i class="cls-btn close-btn fa-solid fa-xmark"></i>
-                </button>
-                <nav class="menu-nav">
-                    <a href="#about">Acerca de mí</a>
-                    <a href="#habilities">Habilidades</a>
-                    <a href="#formation">Formación</a>
-                    <a href="#projects">Proyectos</a>
-                    <a href="#contact">Contacto</a>
-                </nav>
-            </div>
+      <div class="menu">
+        <div class="menu-position">
+          <a href="#home"
+            ><span class="logo logo-menu">
+              Da<span class="span-b"
+                >bit</span
+              >
+            </span></a
+          >
+          <button class="menu-button">
+            <svg class="hamb-btn" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="#0a0214" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
+            <svg class="cls-btn close-btn" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><g fill="none" stroke="#0a0214" stroke-linecap="round" stroke-width="2"><path d="M5 5L12 5L19 5"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 5L12 5L19 5;M5 5L12 12L19 5"/></path><path d="M5 12H19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 12H19;M12 12H12"/></path><path d="M5 19L12 19L19 19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 19L12 19L19 19;M5 19L12 12L19 19"/></path></g></svg>
+          </button>
+          <nav class="menu-nav">
+            <a href="#about">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#training">Training</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
-        <div class="portada section-styles">
-            <h1 class="presentation">
-                Soy <span class="color-name">Fernando Malán<span class="color-span">.</span></span> Desarrollador Frontend
-            </h1>
-            <div class="btns-presentacion">
-                <a class="btn btn-proj" href="#projects">Ver proyectos
-                    <i class="fa-solid fa-folder-open"></i>
-                </a>
-                <a class="btn btn-cv" href="assets/CV/CV_2022.pdf" target="_blank">
-                    <i class="fa-solid fa-arrow-down"></i> Curriculum
-                </a>
-            </div>
-            <div class="portada-image">
-                <img src="assets/illustrations/portada-image.svg" alt="office-illustration">
-            </div>
+      </div>
+      <section class="portrait section-styles">
+        <div class="portrait-text">
+          <h1 class="presentation">
+            I'm
+            <span class="color-name"
+              >Fernando Malán<span class="color-span">.</span></span
+            >
+            Fullstack Developer
+          </h1>
+          <div class="btns-presentacion">
+            <a class="btn btn-cv" href="assets/CV/CV_2022.pdf" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 24 24"
+              >
+                <g fill="none">
+                  <path
+                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                  />
+                  <path
+                    fill="#e7e2cc"
+                    d="M20 15a1 1 0 0 1 1 1v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4a1 1 0 1 1 2 0v4h14v-4a1 1 0 0 1 1-1M12 2a1 1 0 0 1 1 1v10.243l2.536-2.536a1 1 0 1 1 1.414 1.414l-4.066 4.066a1.25 1.25 0 0 1-1.768 0L7.05 12.121a1 1 0 1 1 1.414-1.414L11 13.243V3a1 1 0 0 1 1-1"
+                  />
+                </g>
+              </svg>
+              Resume
+            </a>
+          </div>
+          <div class="social-buttons">
+            <a
+              href="https://www.linkedin.com/in/fernando-david-malan-perugachi-b48b6321a/"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#080d18"
+                  d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z"
+                />
+              </svg>
+            </a>
+            <a href="https://github.com/MalanFernando" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#080d18"
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
+        <div
+          class="content-profile"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <div class="profile-photo">
+            <a
+              href="mailto:fernando-perugachi@hotmail.com"
+              target="_blank"
+              aria-label="Email"
+              class="btn-contact"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                  />
+                  <path
+                    fill="#080d18"
+                    d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-7.667L8 21.5c-.824.618-2 .03-2-1V19H5a3 3 0 0 1-3-3z"
+                  />
+                </g>
+              </svg>
+            </a>
+            <h3 class="profile-salute">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 32 32"
+              >
+                <g fill="#080d18">
+                  <path
+                    d="M10.251 18.137c1.16-.083 2.928-.19 4.711-.107c.585.027 1.154.074 1.693.144l-.223.102c-1.867.863-4.203 2.332-5.932 4.738a1 1 0 1 0 1.625 1.167c1.459-2.031 3.466-3.313 5.146-4.09a15.94 15.94 0 0 1 2.106-.8a11.902 11.902 0 0 1 .771-.203l.036-.008h.007a1 1 0 0 0 .29-1.86c-1.488-.816-3.558-1.102-5.426-1.188c-1.906-.088-3.772.026-4.947.11a1 1 0 0 0 .143 1.995Z"
+                  />
+                  <path
+                    d="M19.518 1.278c-.707-.19-1.531-.241-2.314.043c-.82.298-1.486.926-1.88 1.886c-.418 1.02-1.2 3.492-1.779 5.52c-.44-1.337-.91-2.75-1.117-3.298c-.62-1.644-2.565-2.377-4.111-1.957c-.862.233-1.54.83-1.957 1.498a3.265 3.265 0 0 0-.507 1.585a3.723 3.723 0 0 0-1.9.2a.993.993 0 0 0-.075.032c-1.097.529-1.744 1.29-1.923 2.309c-.155.883.08 1.836.297 2.659c.102.387.314 1.048.535 1.737l.173.538c.29.912.55 1.757.638 2.197l.07.338c.123.592.147.704.478 3.807c.305 2.855 1.298 5.499 3.018 7.446c1.739 1.97 4.18 3.174 7.229 3.174c4.003 0 7.267-2.736 8.754-5.503c1.25-2.33 4.106-6.032 5.76-7.95c1.355-1.384 1.586-3.742.097-5.23c-1.238-1.239-2.976-1.315-4.326-.502l1.293-3.345c.709-1.605.471-4.01-1.768-4.96a3.045 3.045 0 0 0-2.477.015c-.303-1.044-1.076-1.942-2.208-2.239ZM8.32 8.431a102.69 102.69 0 0 0-.451-1.648c-.039-.136-.02-.422.188-.755c.2-.321.494-.547.781-.625h.003c.733-.2 1.523.219 1.715.73c.254.674.958 2.816 1.475 4.39l.308.939l.011.033c.056.169.122.37.192.527c.036.08.102.221.212.355c.1.123.38.412.848.412c.36 0 .616-.174.75-.295a1.45 1.45 0 0 0 .29-.372c.123-.219.208-.48.27-.749c.413-1.792 1.72-6.08 2.263-7.408c.195-.475.46-.672.712-.764c.286-.104.671-.11 1.114.01l.008.002c.537.14 1.01.853.823 1.643c-.14.587-.259.987-.34 1.232l-.025.058l-.008.018l-.057.166a7.08 7.08 0 0 0-.069.2l-2.028 5.9a1 1 0 1 0 1.89.65l2.049-5.955a4.927 4.927 0 0 0 .106-.288c.314-.767.7-1.198 1.031-1.407a1.063 1.063 0 0 1 1.04-.088c.876.372 1.146 1.367.714 2.325a1.032 1.032 0 0 0-.02.05l-3.032 7.844a1 1 0 0 0 1.666 1.041l2.595-2.797c.707-.696 1.637-.691 2.246-.082c.601.601.595 1.709-.125 2.43a1.013 1.013 0 0 0-.05.053c-1.676 1.941-4.668 5.8-6.03 8.337c-1.233 2.294-3.906 4.45-6.993 4.45c-2.47 0-4.367-.956-5.73-2.498c-1.38-1.565-2.255-3.785-2.527-6.336c-.339-3.172-.364-3.291-.507-3.984a49.52 49.52 0 0 1-.07-.34c-.114-.575-.415-1.54-.693-2.413l-.187-.583c-.218-.68-.405-1.263-.492-1.594c-.235-.89-.328-1.42-.26-1.804c.042-.244.163-.526.783-.834c.884-.32 1.602.153 1.735.543c.014.042.031.083.05.122l1.707 4.698a1 1 0 0 0 1.88-.683L8.329 8.464l-.01-.033Z"
+                  />
+                </g>
+              </svg>
+            </h3>
+            <div class="profile-info">
+              <h4 class="info-nickname">
+                Dabit
+                <span
+                  ><img
+                    class="icon-ec"
+                    src="assets/img/icon-ec.png"
+                    alt="flag-Ecuadorian"
+                    width="24px"
+                    height="21px"
+                /></span>
+              </h4>
+              <p class="info-level">Front. Developer</p>
+              <p class="info-hashtag">#OpenToWork</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main class="main-section">
-        <section id="about" class="about-me flex-content section-styles">
-            <div class="content-profile" data-aos="fade-down"
-            data-aos-duration="1000">
-            <div class="profile-photo">
-                <a href="https://www.linkedin.com/in/fernando-david-malan-perugachi-b48b6321a/" target="_blank"><i class="linke fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/MalanFernando" target="_blank"><i class="git fa-brands fa-github"></i></a>
-                <a href="mailto:fernando-perugachi@hotmail.com" target="_blank" aria-label="Email" class="btn-contact"><i class="fa-regular fa-paper-plane"></i></i>Contáctame</a>
-                <h3 class="profile-salute">Hi!</h3>
-                <div class="profile-info">
-                    <h4 class="info-nickname">Dabit <span><img class="icon-ec" src="assets/img/icon-ec.png" alt="flag-ecuadorian"></span></h4>
-                    <p class="info-level">Jr. Developer</p>
-                    <p class="info-hashtag">#OpenToWork</p>
+      <div class="bg-main">
+      </div>
+      <section id="about" class="about-me flex-content section-styles">
+        <div class="about-image">
+          <img
+            src="assets/illustrations/desk.svg"
+            alt="office-illustration"
+            width="380px"
+            height="auto"
+          />
+        </div>
+        <div class="card-about" data-aos="fade-up" data-aos-duration="1200">
+          <h2 class="subtit-section">
+            About <span class="yellow about-span">me</span>.
+          </h2>
+          <div class="about-window">
+            <div class="window-bar">
+              <div class="bar-buttons">
+                <span class="b-btn red"></span>
+                <span class="b-btn yellow"></span>
+                <span class="b-btn green"></span>
+              </div>
+              <div class="bar-title">about.txt</div>
+            </div>
+            <div class="window-content">
+              <div class="content-sidebar"></div>
+              <div class="content-text">
+                <p class="content-parraf">
+                  I'm from Ecuador, I have experience with web technologies and
+                  I'm focused on frontend development.<p class="content-parraf">I am constantly looking
+                  for ways to improve my skills as a professional, participating
+                  in events like hackathons and open source projects.</p><p class="content-parraf">In the
+                  future I want to contribute my knowledge to the tech community
+                  with valuable content.</p>
+                </p>
+                <svg class="content-cursor" xmlns="http://www.w3.org/2000/svg" width="40"
+                  height="40"
+                  viewBox="0 0 42 42" ><path d="M8,4.85a.72.72,0,0,1-.11,1L7.7,6a.7.7,0,0,1-1-.11L4.51,3.16a.71.71,0,0,1,.11-1L4.8,2a.74.74,0,0,1,1,.11Zm7.84-3.76A.73.73,0,0,0,15.07.3l-.21,0a.72.72,0,0,0-.67.64L13.77,5.3a.71.71,0,0,0,.76.78h.21a.72.72,0,0,0,.67-.64ZM4.39,12.72a.71.71,0,0,0,.83-.5L5.29,12a.71.71,0,0,0-.54-.9l-3.63-.77a.72.72,0,0,0-.84.49l-.06.23a.71.71,0,0,0,.53.9Z" transform="translate(-0.19 -0.3)" style="fill:#ebebee"/><path d="M28.93,16.58a.72.72,0,0,1-.05,1.32L23.58,20a.71.71,0,0,0-.28,1.13L27.55,26a.71.71,0,0,1-.09,1L24.7,29.2a.72.72,0,0,1-1-.09L19.29,24a.72.72,0,0,0-1.12.05l-3.11,4.3a.71.71,0,0,1-1.27-.27L9.63,8.89a.71.71,0,0,1,1-.8Z" transform="translate(-0.19 -0.3)" style="fill:#ebebee;stroke:#000;stroke-miterlimit:10"/></svg>
                 </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="portfolio section-styles">
+        <h2 class="subtit-section title-proj">Projects.
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 256 256"><path fill="#599787" d="M245 110.64a16 16 0 0 0-13-6.64h-16V88a16 16 0 0 0-16-16h-69.33l-27.73-20.8a16.14 16.14 0 0 0-9.6-3.2H40a16 16 0 0 0-16 16v144a8 8 0 0 0 8 8h179.1a8 8 0 0 0 7.59-5.47l28.49-85.47a16.05 16.05 0 0 0-2.18-14.42M93.34 64l27.73 20.8a16.12 16.12 0 0 0 9.6 3.2H200v16H69.77a16 16 0 0 0-15.18 10.94L40 158.7V64Z"/></svg>
+        </h2>
+        <div class="cards-portaf flex-content">
+          <div class="card-content" data-aos="fade-up" data-aos-duration="1300">
+            <a
+              class="card-link"
+              href="https://glowing-cocada-605b6a.netlify.app/#/"
+              target="_blank"
+            >
+              <picture>
+                <img src="assets/proyectos-img/pokedex.png" width="280px" height="auto" class="proj-img" alt="">
+              </picture>
+            </a>
+            <div class="card-text">
+              <p class="txt-title"><span class="txt-num">01.</span>Pokedex</p>
+              <p class="txt-proj">
+                Web application developed with <span class="span-frame">React</span>, native
+                <span class="span-style">Css</span> and <span class="span-tool">Redux</span>.
+              </p>
             </div>
-            <div class="card-about" data-aos="fade-up" data-aos-duration="1200">
-                <h2 class="subtit-section">Acerca de <span class="yellow about-span">mí</span></h2>
-                <div class="about-window">
-                    <div class="window-bar">
-                        <div class="bar-buttons">
-                            <span class="b-btn  red"></span>
-                            <span class="b-btn  yellow"></span>
-                            <span class="b-btn green"></span>
-                        </div>
-                        <div class="bar-title">about.txt</div>
-                    </div>
-                    <div class="window-content">
-                        <div class="content-sidebar">1</div>
-                        <div class="content-text">
-                            <p class="content-parraf"> 
-                                Hola! Soy de Ecuador tengo 26 años, y me gusta el desarrollo frontend, constantemente estoy buscando aprender algo nuevo, el diseño y la creatividad son mi punto fuerte y disfruto desarrollar soluciones para la web.  Busco explotar mis habilidades tanto blandas como técnicas y deseo aportar un valor significativo a las empresas.
-                            </p>
-                            <svg class="content-cursor" width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M40.6735 23.9252C41.4739 24.2964 41.4364 25.4467 40.6135 25.765L33.1863 28.6381C32.5407 28.8878 32.338 29.7022 32.7913 30.2255L38.7501 37.1041C39.1234 37.535 39.0614 38.1904 38.6138 38.5437L34.7516 41.5927C34.3314 41.9244 33.7243 41.8663 33.3747 41.4608L27.1848 34.2818C26.7631 33.7927 25.9953 33.8256 25.617 34.349L21.2652 40.3702C20.7586 41.0713 19.6611 40.8419 19.4775 39.9966L13.6512 13.1597C13.4759 12.3523 14.2997 11.6927 15.0492 12.0403L40.6735 23.9252ZM11.1917 6.79351C11.5367 7.2244 11.4674 7.85339 11.0367 8.19873L10.7805 8.40421C10.3495 8.74982 9.71989 8.68047 9.37446 8.24935L6.31331 4.42876C5.96799 3.99776 6.03743 3.36843 6.46842 3.02309L6.72573 2.81692C7.15681 2.4715 7.7863 2.54105 8.13159 2.97223L11.1917 6.79351ZM22.1636 1.52038C22.2235 0.906646 21.719 0.385523 21.1037 0.425407L20.801 0.445026C20.3119 0.476723 19.9179 0.858132 19.8704 1.34587L19.2777 7.42287C19.2179 8.0366 19.7223 8.55772 20.3377 8.51784L20.6404 8.49822C21.1294 8.46652 21.5234 8.08511 21.571 7.59738L22.1636 1.52038ZM6.14488 17.807C6.65656 17.9159 7.16566 17.6119 7.31264 17.1099L7.40366 16.799C7.56716 16.2405 7.22116 15.661 6.65199 15.5399L1.56172 14.4572C1.05004 14.3484 0.540945 14.6523 0.39396 15.1543L0.30294 15.4652C0.139442 16.0237 0.485442 16.6033 1.05461 16.7243L6.14488 17.807Z" fill="#EBEBEE"/>
-                            </svg>                                
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="card-content" data-aos="fade-up" data-aos-duration="1000">
+            <a
+              class="card-link"
+              href="https://choosebooks.netlify.app/"
+              target="_blank"
+            >
+              <picture>
+                <img src="assets/proyectos-img/chooseBook.png" width="280px" height="auto" class="proj-img" alt="">
+              </picture>
+            </a>
+            <div class="card-text">
+              <p class="txt-title"><span class="txt-num">02.</span>Choose Book</p>
+              <p class="txt-proj">
+                Web application developed with <span class="span-frame">React</span>, native
+                <span class="span-style">Css</span>, <span class="span-tool">Wouter</span> and <span class="span-tool">Context API</span>.
+              </p>
             </div>
-        </section>
-        <section id="habilities" class="hab-section">
-            <div class="section-card">
-                <div class="card-info">
-                    <h2 class="subtit-section">Habilidades Técnicas</h2>
-                    <span class="sub-quotes">“</span>
-                    <p class="info-parr">
-                        Llevo alrededor de <span class="span-year">2 años</span> y medio de estudio sobre diseño, maquetación y <span class="span-develop">desarrollo web</span> en general de manera autodidacta y en plataformas online. Actualmente me certifique como desarrollador <span class="span-stack">PERN stack</span> y tengo conocimiento básico e intermedio de las siguientes tecnologías y herramientas.
-                    </p>
-                    <img class="skill-img" src="assets/illustrations/skills.svg" alt="ofice-designer-illustration">
-                </div>
-                <div class="flex-list">
-                    <ul class="flex-content">
-                        <li class="hab-js" data-aos="fade-right" data-aos-duration="1200"><i class="icon-tech fa-brands fa-js-square"></i><h4>JavaScript</h4></li>
-                        <span class="arrow a-first" data-aos="fade-right" data-aos-duration="1000"><i class="fa-solid fa-circle-arrow-right"></i></span>
-                        <li class="hab-html" data-aos="fade-left" data-aos-duration="1300"><i class="icon-tech fa-brands fa-html5"></i><h4>Html</h4></li>
-                        <li class="a-second" data-aos="fade-right" data-aos-duration="1600"><i class="arrow fa-solid fa-arrow-right-long"></i></li>
-                        <li class="hab-git" data-aos="fade-right" data-aos-duration="1200"><i class="icon-tech fa-brands fa-git-alt"></i><h4>Git</h4></li>
-                        <li class="hab-css" data-aos="fade-left" data-aos-duration="1200"><i class="icon-tech fa-brands fa-css3-alt"></i><h4>Css</h4></li>
-                        <span class="arrow a-third" data-aos="fade-left" data-aos-duration="1200"><i class="fa-solid fa-circle-arrow-left"></i></span>
-                        <li class="hab-react" data-aos="fade-left" data-aos-duration="1000"><i class="icon-tech fa-brands fa-react"></i><h4>React</h4></li>
-                        <span class="hearth" data-aos="zoom-in" data-aos-duration="1100"><i class="fa-solid fa-heart"></i></span>
-                        <li class="hab-node" data-aos="fade-left" data-aos-duration="800"><i class="icon-tech fa-brands fa-node-js"></i><h4>Node Js</h4></li>
-                        <li class="hab-net" data-aos="fade-right" data-aos-duration="1000"><img src="assets/icons/dotNet.svg" alt=".net-logo"><h4>.Net</h4></li>
-                        <li class="hab-db" data-aos="fade-right" data-aos-duration="900"><img src="assets/icons/postgreSql.svg" alt="postgresql-logo"><h4>PostgreSql</h4></li>
-                        <span class="arrow a-fourth" data-aos="fade-down" data-aos-duration="800"><i class="fa-solid fa-circle-arrow-down"></i></span>
-                        <li class="hab-fig" data-aos="fade-right" data-aos-duration="1000"><i class="icon-tech fa-brands fa-figma"></i><h4>Figma</h4></li>
-                        <span class="arrow a-fifth" data-aos="fade-left" data-aos-duration="600"><i class="fa-solid fa-circle-arrow-down"></i></span>
-                        <li class="hab-illus" data-aos="fade-left" data-aos-duration="1200"><i class="icon-tech fa-solid fa-bezier-curve"></i><h4>Illustrator</h4></li>
-                        <li class="hab-ph" data-aos="fade-right" data-aos-duration="1800"><i class="icon-tech fa-solid fa-pen-nib"></i><h4>Photoshop</h4></li>
-                        <span class="arrow smile" data-aos="zoom-in" data-aos-duration="1000"><i class="fa-solid fa-face-laugh-beam"></i></span>    
-                    </ul>
-                </div>
+          </div>
+          <div class="card-content" data-aos="fade-up" data-aos-duration="1600">
+            <a
+              class="card-link"
+              href="https://c14-04-m-node-react-yk1u.vercel.app/"
+              target="_blank"
+            >
+              <picture>
+                <img src="assets/proyectos-img/cloneBnb.png" width="280px" height="auto" class="proj-img" alt="">
+              </picture>
+            </a>
+            <div class="card-text">
+              <p class="txt-title"><span class="txt-num">03.</span>CloneBnB</p>
+              <p class="txt-proj">
+                Web application developed with <span class="span-frame">NextJs</span>,
+                <span class="span-style">Tailwind</span>, <span class="span-tool">Context API</span>, <span class="span-tool">Next Auth</span>, <span class="span-tool">MySql</span> and
+                <span class="span-tool">ExpressJs</span>.
+              </p>
             </div>
-        </section>
-        <section id="formation" class="formation section-styles">
-            <img class="forma-img-graduate" src="assets/illustrations/graduate.svg" alt="graduate-illustration">
-            <div class="forma-title">
-                <span class="title-bg for"><h2 class="bg-letter">FOR</h2></span>
-                <span class="title-bg ma"><h2 class="bg-letter">MA</h2></span>
-                <span class="title-bg tion"><h2 class="bg-letter">CIÓN</h2></span>
-            </div>
-            <div class="forma-card">
-                <ul class="card-list">
-                    <li class="list-line">
-                        <h3 class="tit-forma" data-aos="fade-left">Academlo</h3>
-                        <p class="text-forma" data-aos="fade-left">
-                        Full-Stack <span class="span-year">2022</span> - 2022
-                        </p>
-                    </li>
-                    <li class="list-line">
-                        <h3 class="tit-forma" data-aos="fade-left">Alura Latam</h3>
-                        <p class="text-forma" data-aos="fade-left">
-                        <span class="span-front">Frontend</span> Developer 2021 - 2021
-                        </p>
-                    </li>
-                    <li class="list-line">
-                        <h3 class="tit-forma" data-aos="fade-left">KeepCoding</h3>
-                        <p class="text-forma" data-aos="fade-left">
-                        Web <span class="span-keepCod">developer</span> 2019 - 2020
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="tit-forma" data-aos="fade-left">UTPL</h3>
-                        <p class="text-forma" data-aos="fade-left">
-                        <span class="yellow">Ing.</span> Informático 2017 - 2019
-                        </p>
-                    </li>
-                </ul>
-                <div class="forma-imgs" data-aos="fade-right" data-aos-duration="1200">
-                    <div class="imgs-group">
-                        <img src="assets/logos/academlo.png" alt="academlo-logo">
-                        <img src="assets/logos/alura.png" alt="AluraLatam-logo">
-                    </div>
-                    <div class="imgs-group">
-                        <img src="assets/logos/keep.png" alt="KeepCoding-logo">
-                        <img src="assets/logos/utpl.png" alt="UniversidadTecnicaParticularDeLoja-logo">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="portfolio section-styles">
-            <img class="project-bg" src="assets/illustrations/octopus.svg" alt="octopus-programmer-illustration">
-            <h2 class="subtit-section">Proyectos</h2>
-            <p>
-                Ultimos <span class="span-year proj-name">proyectos</span> realizados
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skill-section section-styles">
+        <div class="section-card">
+          <div class="card-info">
+            <span class="title-skill">>_ Tech/skills:</span>
+            <div class="info-parr">
+              <p>
+              I have <span class="span-year">4 and a half years</span> of
+              professional preparation as a
+              <span class="span-develop">web developer</span> and I have
+              polished my skills in different areas of computer science in a
+              self-taught way and with academic training.
+              <p>I am eager to work in
+              a team that makes me develop my technical skills and abilities. My
+              goal is to <span class="span-stack">grow professionally</span> and
+              contribute to the community my values and knowledge in the future.</p>
             </p>
-            <div class="cards-portaf flex-content">
-                <div class="card-content" data-aos="fade-up" data-aos-duration="1000">
-                    <a class="card-link" href="https://candid-panda-d2ffa4.netlify.app/#/" target="_blank">
-                        <span class="span-view"><i class="fa-solid fa-eye"></i></span>
-                        <div class="card card-img1">
-                        </div>
-                    </a>
-                    <div class="card-text">
-                        <h3 class="txt-title">U-commerce</h3>
-                        <p>Web app responsive tipo e-commerce creada con <span class="span-frame">React</span> como 
-                            framework, <span class="span-style">Css</span> para los estilos y 
-                            <span class="span-tool">Redux</span> para el manejo de estado.</p>
-                        <a href="https://github.com/MalanFernando/E-commerce" target="_blank"><i class="btn-git fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="card-content" data-aos="fade-up" data-aos-duration="1300">
-                    <a class="card-link" href="https://glowing-cocada-605b6a.netlify.app/#/" target="_blank">
-                        <span class="span-view"><i class="fa-solid fa-eye"></i></span>
-                        <div class="card card-img2">
-                        </div>
-                    </a>
-                    <div class="card-text">
-                        <h3 class="txt-title">Pokedex</h3>
-                        <p>Web app con informacion sobre los
-                            pokemons, uso de <span class="span-frame">React</span> como 
-                            framework, <span class="span-style">Css</span> para los estilos y
-                            <span class="span-tool">local storage</span> para almacenar el nombre de usuario.
-                        <a href="https://github.com/MalanFernando/PokeApi" target="_blank"><i class="btn-git fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="card-content" data-aos="fade-up" data-aos-duration="1600">
-                    <a class="card-link" href="https://sparkly-liger-6ebb6a.netlify.app/" target="_blank">
-                        <span class="span-view"><i class="fa-solid fa-eye"></i></span>
-                        <div class="card card-img3">
-                        </div>
-                    </a>
-                    <div class="card-text">
-                        <h3 class="txt-title">Rick & Morty-wiki</h3>
-                        <p>Web responsive tipo wiki acerca de los
-                            personajes de la serie, creada con <span class="span-frame">React</span> 
-                            como framework, <span class="span-style">Css</span> para los
-                            estilos y <span class="span-tool">Redux</span> para el manejo de 
-                            estado.</p>
-                        <a href="https://github.com/MalanFernando/Rick_and_Morty" target="_blank"><i class="btn-git fa-brands fa-github"></i></a>
-                    </div>
-                </div>
             </div>
-        </section>
+          </div>
+          <div class="flex-list">
+            <ul class="flex-content">
+              <li
+                class="skill-js"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="21"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="#080d18"
+                    d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5c-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6c13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6c17.4 0 28.6-8.7 28.6-20.8c0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5c0-31.6 24.1-55.6 61.6-55.6c26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18c-12.3 0-20.1 7.8-20.1 18c0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2c0 37.8-29.8 58.6-69.7 58.6z"
+                  />
+                </svg>
+                <span>JavaScript</span>
+              </li>
+              <li
+                class="a-second"
+                data-aos="fade-right"
+                data-aos-duration="1600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#080d18"
+                    d="M16.175 13H4v-2h12.175l-5.6-5.6L12 4l8 8l-8 8l-1.425-1.4z"
+                  />
+                </svg>
+              </li>
+              <li
+                class="skill-html"
+                data-aos="fade-left"
+                data-aos-duration="1300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#ebebeb"
+                    d="m12 18.178l4.62-1.256l.623-6.778H9.026L8.822 7.89h8.626l.227-2.211H6.325l.636 6.678h7.82l-.261 2.866l-2.52.667l-2.52-.667l-.158-1.844h-2.27l.329 3.544L12 18.178ZM3 2h18l-1.623 18L12 22l-7.377-2L3 2Z"
+                  />
+                </svg>
+                <span>Html</span>
+              </li>
+              <li
+                class="arrow a-first"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#080d18"
+                    d="M16.175 13H4v-2h12.175l-5.6-5.6L12 4l8 8l-8 8l-1.425-1.4z"
+                  />
+                </svg>
+              </li>
+              <li
+                class="skill-css"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#ebebeb"
+                    d="m11.983 20.989l-6.37-1.813l-1.42-16.033h15.615l-1.42 16.034l-6.4 1.812h-.004Zm-4.261-7.637l.216 2.867L12 17.483l3.99-1.14l.906-9.923h-9.8l.158 1.949h7.529l-.186 2.024H9.66l.178 1.912h4.6l-.272 2.62l-2.164.6l-2.2-.6l-.14-1.57h-1.94v-.003Z"
+                  />
+                </svg>
+                <span>Css</span>
+              </li>
+              <li
+                class="arrow a-third"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#080d18"
+                    d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12q0-.2.063-.375T4.7 11.3l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12q0 .425-.288.713T19 13z"
+                  />
+                </svg>
+              </li>
+              <li
+                class="skill-react"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#087ea4"
+                    d="M11.103 10.438a1.786 1.786 0 1 0 2.44.654a1.786 1.786 0 0 0-2.44-.654Zm8.005 1.938q-.176-.201-.371-.403q.136-.144.264-.287c1.605-1.804 2.283-3.614 1.655-4.701c-.602-1.043-2.393-1.354-4.636-.918q-.331.065-.659.146q-.063-.216-.133-.43C14.467 3.49 13.238 1.999 11.982 2c-1.204 0-2.368 1.397-3.111 3.558q-.11.32-.203.644q-.219-.054-.44-.1c-2.366-.485-4.271-.165-4.898.924c-.601 1.043.027 2.75 1.528 4.472q.224.255.46.5c-.186.19-.361.381-.525.571c-1.465 1.698-2.057 3.376-1.457 4.415c.62 1.074 2.498 1.425 4.785.975q.278-.055.553-.124q.1.351.221.697C9.635 20.649 10.792 22 11.992 22c1.24 0 2.482-1.453 3.235-3.659c.06-.174.115-.355.169-.541q.355.088.715.156c2.203.417 3.952.09 4.551-.95c.619-1.075-.02-2.877-1.554-4.63ZM4.07 7.452c.386-.67 1.943-.932 3.986-.512q.196.04.399.09a20.464 20.464 0 0 0-.422 2.678A20.887 20.887 0 0 0 5.93 11.4q-.219-.227-.427-.465C4.216 9.461 3.708 8.081 4.07 7.452Zm3.887 5.728c-.51-.387-.985-.783-1.416-1.181c.43-.396.905-.79 1.415-1.176q-.028.589-.027 1.179q0 .59.028 1.178Zm0 3.94a7.237 7.237 0 0 1-2.64.094a1.766 1.766 0 0 1-1.241-.657c-.365-.63.111-1.978 1.364-3.43q.236-.273.488-.532a20.49 20.49 0 0 0 2.107 1.7a20.802 20.802 0 0 0 .426 2.712q-.25.063-.505.114Zm7.1-8.039q-.503-.317-1.018-.613q-.508-.292-1.027-.563a18.7 18.7 0 0 1 1.739-.635a18.218 18.218 0 0 1 .306 1.811ZM9.68 5.835c.636-1.85 1.578-2.98 2.304-2.98c.773-.001 1.777 1.218 2.434 3.197q.064.194.12.39a20.478 20.478 0 0 0-2.526.97a20.061 20.061 0 0 0-2.52-.981q.087-.3.188-.596Zm-.4 1.424a18.307 18.307 0 0 1 1.73.642q-1.052.542-2.048 1.181c.08-.638.187-1.249.318-1.823Zm-.317 7.66q.497.319 1.009.613q.522.3 1.057.576a18.196 18.196 0 0 1-1.744.665a19.144 19.144 0 0 1-.322-1.853Zm5.456 3.146a7.236 7.236 0 0 1-1.238 2.333a1.766 1.766 0 0 1-1.188.748c-.729 0-1.658-1.085-2.29-2.896q-.112-.321-.206-.648a20.109 20.109 0 0 0 2.53-1.01a20.8 20.8 0 0 0 2.547.979q-.072.249-.155.494Zm.362-1.324a19.267 19.267 0 0 1-1.762-.646q.509-.267 1.025-.565q.53-.306 1.032-.627a18.152 18.152 0 0 1-.295 1.838Zm.447-4.743q0 .911-.057 1.82c-.493.334-1.013.66-1.554.972c-.54.311-1.073.597-1.597.856q-.827-.396-1.622-.854q-.79-.455-1.544-.969q-.07-.91-.07-1.822q0-.911.068-1.821a24.168 24.168 0 0 1 3.158-1.823q.816.397 1.603.851q.79.454 1.55.959q.065.914.065 1.831Zm.956-5.093c1.922-.373 3.37-.122 3.733.507c.387.67-.167 2.148-1.554 3.706q-.115.129-.238.259a20.061 20.061 0 0 0-2.144-1.688a20.04 20.04 0 0 0-.405-2.649q.31-.076.608-.135Zm-.13 3.885a18.164 18.164 0 0 1 1.462 1.188a18.12 18.12 0 0 1-1.457 1.208q.023-.594.023-1.188q0-.604-.028-1.208Zm3.869 5.789c-.364.631-1.768.894-3.653.538q-.324-.061-.664-.146a20.069 20.069 0 0 0 .387-2.682a19.94 19.94 0 0 0 2.137-1.715q.177.183.336.364a7.234 7.234 0 0 1 1.403 2.238a1.766 1.766 0 0 1 .054 1.403Z"
+                  />
+                </svg>
+                <span>React</span>
+              </li>
+              <li
+                class="skill-next"
+                data-aos="fade-right"
+                data-aos-duration="1800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#fff"
+                    d="M386.399 35.508C217.06-64.061 1.885 57.55.012 253.882c-1.828 191.716 201.063 315.545 370.02 231.163L185.56 213.636v167.997c0 18.614-35.619 18.614-35.619 0V156.421c0-14.776 27.448-15.989 35.226-3.145L395.43 470.572c157.95-101.737 155.817-338.136-9.031-435.064zm-23.756 317.939L326.91 298.87V149.458c0-13.932 35.732-13.932 35.732 0v203.989z"
+                  />
+                </svg>
+                <span>NextJs</span>
+              </li>
+              <li class="hearth" data-aos="zoom-in" data-aos-duration="1100">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#080d18"
+                    d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+                  />
+                </svg>
+              </li>
+              <li
+                class="skill-expo"
+                data-aos="fade-right"
+                data-aos-duration="1800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    fill="#080d18"
+                    d="M24.292 15.547a3.927 3.927 0 0 0 4.115-3.145a2.57 2.57 0 0 0-2.161-1.177c-2.272-.052-3.491 2.651-1.953 4.323zm-9.177-10.85l5.359-3.104L18.766.63l-7.391 4.281l.589.328l1.119.629l2.032-1.176zm6.046-3.39c.089.027.161.1.188.188l2.484 7.593a.285.285 0 0 1-.125.344a5.062 5.062 0 0 0-2.317 5.693a5.066 5.066 0 0 0 5.401 3.703a.299.299 0 0 1 .307.203l2.563 7.803a.3.3 0 0 1-.125.344l-7.859 4.771a.273.273 0 0 1-.131.036a.262.262 0 0 1-.203-.041l-2.765-1.797a.311.311 0 0 1-.109-.129l-5.396-12.896l-8.219 4.875c-.016.011-.037.021-.052.032a.293.293 0 0 1-.261-.021l-1.859-1.093a.283.283 0 0 1-.115-.381l7.953-15.749a.273.273 0 0 1 .135-.131L18.615.045a.293.293 0 0 1 .292-.005zm-8.322 5.1l-1.932-1.089l-7.693 15.229l1.396.823l6.631-9.015a.281.281 0 0 1 .271-.12a.288.288 0 0 1 .235.177l7.228 17.296l1.933 1.251l-8.063-24.552zm13.406 10.557c-2.256 0-3.787-2.292-2.923-4.376c.86-2.083 3.563-2.619 5.156-1.025c.595.593.928 1.396.928 2.235a3.159 3.159 0 0 1-3.161 3.167z"
+                  />
+                </svg>
+                <span>Expo</span>
+              </li>
+              <li
+                class="skill-node"
+                data-aos="fade-left"
+                data-aos-duration="800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#3c873a"
+                    d="M12 21.985c-.275 0-.532-.074-.772-.202l-2.439-1.448c-.365-.203-.182-.277-.072-.314c.496-.165.588-.201 1.101-.493c.056-.037.129-.02.185.017l1.87 1.12c.074.036.166.036.221 0l7.319-4.237c.074-.036.11-.11.11-.202V7.768c0-.091-.036-.165-.11-.201l-7.319-4.219c-.073-.037-.165-.037-.221 0L4.552 7.566c-.073.036-.11.129-.11.201v8.457c0 .073.037.166.11.202l2 1.157c1.082.548 1.762-.095 1.762-.735V8.502c0-.11.091-.221.22-.221h.936c.108 0 .22.092.22.221v8.347c0 1.449-.788 2.294-2.164 2.294c-.422 0-.752 0-1.688-.46l-1.925-1.099a1.55 1.55 0 0 1-.771-1.34V7.786c0-.55.293-1.064.771-1.339l7.316-4.237a1.637 1.637 0 0 1 1.544 0l7.317 4.237c.479.274.771.789.771 1.339v8.458c0 .549-.293 1.063-.771 1.34l-7.317 4.236c-.241.11-.516.165-.773.165zm2.256-5.816c-3.21 0-3.87-1.468-3.87-2.714c0-.11.092-.221.22-.221h.954c.11 0 .201.073.201.184c.147.971.568 1.449 2.514 1.449c1.54 0 2.202-.35 2.202-1.175c0-.477-.185-.825-2.587-1.063c-1.999-.2-3.246-.643-3.246-2.238c0-1.485 1.247-2.366 3.339-2.366c2.347 0 3.503.809 3.649 2.568a.297.297 0 0 1-.056.165c-.037.036-.091.073-.146.073h-.953a.212.212 0 0 1-.202-.164c-.221-1.012-.789-1.34-2.292-1.34c-1.689 0-1.891.587-1.891 1.027c0 .531.237.696 2.514.99c2.256.293 3.32.715 3.32 2.294c-.02 1.615-1.339 2.531-3.67 2.531z"
+                  />
+                </svg>
+                <span>Node Js</span>
+              </li>
+              <li
+                class="skill-typescript"
+                data-aos="fade-right"
+                data-aos-duration="1800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#fff"
+                    d="M3 3h18v18H3V3m10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8M13 11.25H8v1.5h1.5V20h1.75v-7.25H13v-1.5Z"
+                  />
+                </svg>
+                <span>TypeScript</span>
+              </li>
+              <li
+                class="skill-net"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <span>.Net</span>
+              </li>
+              <li
+                class="arrow a-fifth"
+                data-aos="fade-left"
+                data-aos-duration="600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#080d18"
+                    d="M11 4v12.175l-5.6-5.6L4 12l8 8l8-8l-1.4-1.425l-5.6 5.6V4z"
+                  />
+                </svg>
+              </li>
+              <li
+                class="skill-db"
+                data-aos="fade-right"
+                data-aos-duration="900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 1025 1024"
+                >
+                  <path
+                    fill="#336791"
+                    d="M864.95 544q13-27 22.5-113.5t9.5-142.5q0-73-49.5-147.5T736.95 32q12-4 33-13.5t35-14t28-4.5q25 0 57 12.5t62.5 35t51.5 61t21 83.5q0 51-19 125t-58 143t-83 84zm-64-288q9 0 24 9q8 30 8 55q0 78-15 171q-16-32-32.5-91t-16.5-80q0-26 9.5-45t22.5-19zm-96 96q0 37 29 96.5t70 111.5q-13 54-32 105q90 69 193 69q-46 34-100 34q-41 0-96-30v158q0 48-40 88t-88 40q-37 0-50.5-17t-13.5-47V768q0-23-21-51q-33 26-79.5 38.5t-91.5 12.5q-9 0-17-1.5t-13.5-3.5t-11-6t-8-6t-8-8t-6.5-7q33 0 83.5-21.5t88.5-53.5q-23-14-44-21q26-77 45-151.5t19-104.5q0-92-27-142t-69-50q-45 0-83 20q20-107 71.5-159.5T544.95 0q67 0 137.5 56.5T794.95 193q-90 5-90 159zm-320-96q64 0 64 96q0 43-9 86t-28 105.5t-27 96.5q-64-119-64-256q0-50 3-93q29-35 61-35zm-73 368q-80 80-119 80q-26 0-59.5-44t-63-111t-49.5-156t-20-169q0-35 12.5-72.5t35-72t60.5-57t84-22.5q60 0 147 34q-40 40-61.5 121.5T256.95 352q0 182 55 272z"
+                  />
+                </svg>
+                <span>PostgreSQL</span>
+              </li>
+              <li
+                class="skill-mongo"
+                data-aos="fade-right"
+                data-aos-duration="1800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#00ed64"
+                    d="M13.74 4.23c-.84-1-1.57-2-1.71-2.22H12c-.14.21-.87 1.22-1.71 2.22c-7.2 9.19 1.14 15.39 1.14 15.39l.07.05c.06.95.22 2.33.22 2.33h.62s.15-1.37.21-2.33l.07-.06s8.32-6.19 1.12-15.38zM12 19.48a3.48 3.48 0 0 1-.48-.48L12 9l.45 10a3.57 3.57 0 0 1-.45.48z"
+                  />
+                </svg>
+                <span>MongoDB</span>
+              </li>
+              <li
+                class="arrow a-fourth"
+                data-aos="fade-down"
+                data-aos-duration="800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#080d18"
+                    d="M11 4v12.175l-5.6-5.6L4 12l8 8l8-8l-1.4-1.425l-5.6 5.6V4z"
+                  />
+                </svg>
+              </li>
+              <li
+                class="skill-git"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#F1502F"
+                    d="M2.6 10.59L8.38 4.8l1.69 1.7c-.24.85.15 1.78.93 2.23v5.54c-.6.34-1 .99-1 1.73a2 2 0 0 0 2 2a2 2 0 0 0 2-2c0-.74-.4-1.39-1-1.73V9.41l2.07 2.09c-.07.15-.07.32-.07.5a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2c-.18 0-.35 0-.5.07L13.93 7.5a1.98 1.98 0 0 0-1.15-2.34c-.43-.16-.88-.2-1.28-.09L9.8 3.38l.79-.78c.78-.79 2.04-.79 2.82 0l7.99 7.99c.79.78.79 2.04 0 2.82l-7.99 7.99c-.78.79-2.04.79-2.82 0L2.6 13.41c-.79-.78-.79-2.04 0-2.82Z"
+                  />
+                </svg>
+                <span>Git</span>
+              </li>
+              <li
+                class="arrow smile"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#0a0214#0a0214" d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5A2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5a2.5 2.5 0 0 0 2.5 2.5a2.5 2.5 0 0 0 2.5-2.5a2.5 2.5 0 0 0-2.5-2.5"/></svg>
+              </li>
+              <li
+                class="skill-fig"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    fill="#080d18"
+                    d="M184 96a40 40 0 0 0-24-72H88a40 40 0 0 0-24 72a40 40 0 0 0 1.37 65A44 44 0 1 0 136 196v-36a40 40 0 1 0 48-64Zm0-32a24 24 0 0 1-24 24h-24V40h24a24 24 0 0 1 24 24ZM64 64a24 24 0 0 1 24-24h32v48H88a24 24 0 0 1-24-24Zm24 88a24 24 0 0 1 0-48h32v48H88Zm32 44a28 28 0 1 1-28-28h28Zm40-44a24 24 0 1 1 24-24a24 24 0 0 1-24 24Z"
+                  />
+                </svg>
+                <span>Figma</span>
+              </li>
+              <li
+                class="skill-illus"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              > 
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32"><path fill="#FF9800" d="M0 .401v31.198h32V.401zm1.333 1.333h29.333v28.531H1.333zm9.766 16.334l-1.057 3.995c-.021.115-.063.135-.193.135H7.891c-.135 0-.156-.042-.135-.193l3.786-13.26c.068-.24.109-.453.13-1.115c0-.089.047-.13.115-.13h2.792c.089 0 .135.021.156.13l4.245 14.396c.026.109 0 .172-.109.172h-2.198c-.115 0-.177-.026-.198-.115l-1.104-4.016h-4.276zm3.719-2.167c-.375-1.474-1.255-4.703-1.583-6.266h-.026c-.281 1.557-.99 4.198-1.536 6.266zm6-7.411c0-.859.594-1.365 1.365-1.365c.813 0 1.365.552 1.365 1.365c0 .88-.573 1.365-1.391 1.365c-.797 0-1.344-.484-1.344-1.365zm.151 3.031c0-.104.042-.146.151-.146h2.094c.12 0 .161.042.161.156v10.526c0 .109-.021.151-.156.151h-2.063c-.135 0-.177-.063-.177-.172V11.52z"/></svg>
+                <span>Illustrator</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="training" class="training section-styles">
+        <div class="forma-title">
+          <h2 class="title-tr">Training</h2>
+          <h2 class="title-tr">History.</h2>
+          <p class="parr-tr">
+            Yes, that's me. You're probably wondering how I ended up here.
+            Here's my background:
+          </p>
+          <div class="train-sch">
+            <div class="train-slide">
+              <img
+              src="assets/logos/noCountry.png"
+              width="100px"
+              height="auto"
+              class="noCountry"
+              alt="NoCountry-logo"
+            />
+            <img
+              src="assets/logos/academlo.png"
+              width="100px"
+              height="auto"
+              class="academlo"
+              alt="academlo-logo"
+            />
+            <img
+              src="assets/logos/alura.png"
+              width="100px"
+              height="auto"
+              class="alura"
+              alt="AluraLatam-logo"
+            />
+            <img
+              src="assets/logos/keep.png"
+              width="100px"
+              height="auto"
+              class="keepcod"
+              alt="KeepCoding-logo"
+            />
+            <img
+              src="assets/logos/utpl.png"
+              width="100px"
+              height="auto"
+              class="utpl"
+              alt="UniversidadTecnicaParticularDeLoja-logo"
+            />
+              <img
+              src="assets/logos/noCountry.png"
+              width="100px"
+              height="auto"
+              class="noCountry"
+              alt="NoCountry-logo"
+            />
+            <img
+              src="assets/logos/academlo.png"
+              width="100px"
+              height="auto"
+              class="academlo"
+              alt="academlo-logo"
+            />
+            <img
+              src="assets/logos/alura.png"
+              width="100px"
+              height="auto"
+              class="alura"
+              alt="AluraLatam-logo"
+            />
+            <img
+              src="assets/logos/keep.png"
+              width="100px"
+              height="auto"
+              class="keepcod"
+              alt="KeepCoding-logo"
+            />
+            <img
+              src="assets/logos/utpl.png"
+              width="100px"
+              height="auto"
+              class="utpl"
+              alt="UniversidadTecnicaParticularDeLoja-logo"
+            />
+            </div>
+          </div>
+        </div>
+        <div class="forma-card">
+          <ul class="card-list">
+            <li class="list-schools sch-noCo">
+              <h4 class="tit-forma" data-aos="fade-left">
+                No Country. <span class="span-noCount">Work Simulation</span>
+              </h3>
+              <p class="text-forma" data-aos="fade-left">
+                Frontend developer 2023 - 2023
+              </p>
+            </li>
+            <li class="list-schools sch-acad">
+              <h4 class="tit-forma" data-aos="fade-left">Academlo.</h3>
+              <p class="text-forma" data-aos="fade-left">
+                Full-Stack <span class="span-year">2022</span> - 2022
+              </p>
+            </li>
+            <li class="list-schools sch-alura">
+              <h4 class="tit-forma" data-aos="fade-left">Alura Latam.</h3>
+              <p class="text-forma" data-aos="fade-left">
+                <span class="span-alura">Frontend</span> developer 2021 - 2021
+              </p>
+            </li>
+            <li class="list-schools sch-keep">
+              <h4 class="tit-forma" data-aos="fade-left">KeepCoding.</h3>
+              <p class="text-forma" data-aos="fade-left">
+                Web <span class="span-keepCod">developer</span> 2019 - 2020
+              </p>
+            </li>
+            <li class="list-schools sch-utpl">
+              <h4 class="tit-forma" data-aos="fade-left">UTPL.</h4>
+              <p class="text-forma" data-aos="fade-left">
+                <span class="span-utpl">Ing.</span> Informático 2017 - 2019
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer id="contact" class="contact-section">
-        <img class="contact-img" src="assets/illustrations/scientific.svg" alt="scientific-illustration">
-        <div class="contact-info section-styles">
-            <h2 class="subtit-section">Contacto</h2>
-            <div class="conta-content">
-                <div class="conte-section">
-                    <p>Let's make something amazing together.</p>
-                    <p>Start by <span>saying hi</span></p>
-                </div>
-                <div class="conte-section">
-                    <p class="email">Email</p>
-                    <a class="mail" href="mailto:fernando-perugachi@hotmail.com" target="_blank" aria-label="Email">fernando-perugachi@hotmail.com</a>
-                </div>
-            </div>
-            <div class="conta-bottom">
-                <a href="#home"><p class="logo">Da<span class="color-span"><span class="span-b">b</span><span class="span-i">i</span><span class="span-t">t</span></span></p></a>
-                <div class="icons-foot">
-                    <a href="https://github.com/MalanFernando" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/fernando-david-malan-perugachi-b48b6321a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com/fernandomalan96" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
+      <img
+        class="contact-img"
+        src="assets/illustrations/scientific.svg"
+        alt="scientific-illustration"
+      />
+      <div class="contact-info section-styles">
+        <h2 class="subtit-section">Contact</h2>
+        <div class="conta-content">
+          <div class="conte-section">
+            <p>Let's make something amazing together.</p>
+            <p>Start by <span>saying hi</span></p>
+          </div>
+          <div class="conte-section">
+            <p class="email">Email</p>
+            <a
+              class="mail"
+              href="mailto:fernando-perugachi@hotmail.com"
+              target="_blank"
+              aria-label="Email"
+              >fernando-perugachi@hotmail.com</a
+            >
+          </div>
         </div>
+        <div class="conta-bottom">
+          <a href="#home"
+            ><span class="logo logo-foot">
+              Da<span class="span-b"
+                >bit</span
+              >
+            </span></a
+          >
+          <div class="social-buttons">
+            <a
+              href="https://www.linkedin.com/in/fernando-david-malan-perugachi-b48b6321a/"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#fff"
+                  d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z"
+                />
+              </svg>
+            </a>
+            <a href="https://github.com/MalanFernando" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#fff"
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            once: true
-        });
+      AOS.init({
+        once: true
+      });
     </script>
-    <script type="text/javascript">
-        $('[data-aos]').parent().addClass('delete_extra_space');
+    <script>
+      $('[data-aos]').parent().addClass('delete_extra_space');
     </script>
-</body>
+  </body>
 </html>
