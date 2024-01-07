@@ -555,8 +555,8 @@ body::-webkit-scrollbar-thumb {
 
 .content-cursor {
     position: absolute;
-    right: -4%;
-    bottom: -5%;
+    right: 0;
+    bottom: 8px;
 }
 
 .bg-main {
@@ -859,6 +859,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
     align-self: center;
     padding: 2rem 0;
+    overflow-x: hidden;
 }
 
 .title-tr {
